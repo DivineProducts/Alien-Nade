@@ -12,7 +12,12 @@ public class tacleMove : MonoBehaviour
 
     //grabbing stuff
     private GameObject grabbedOb;
+    private GameObject grabbedPahar;
     private bool tine = false;
+
+    //prfabs
+    private GameObject cup;
+    public GameObject pahar;
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.Z))
@@ -22,9 +27,13 @@ public class tacleMove : MonoBehaviour
                 grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
                 grabbedOb = null;
             }
+            if (grabbedPahar != null)
+            {
+                grabbedPahar = null;
+            }
             if (tine)
             {
-                // Release the object
+                // da drumul
                 /* grabbedOb.transform.parent = null;*/
                 tine = false;
             }
@@ -45,7 +54,16 @@ public class tacleMove : MonoBehaviour
                /* grabbedOb.transform.parent = transform;*/
                 tine = true;
             }
+            if (grabbedPahar != null)
+            {
+                tine = true;
 
+                paharSpawn();
+                grabbedOb = cup;
+                grabbedPahar.GetComponent<pahareControl>().schimbaSprite();
+
+            }
+            
         }
 
         // uff, 0=LeftMouse; 1=RightMouse.... bagamias piciarele
@@ -91,6 +109,10 @@ public class tacleMove : MonoBehaviour
         {
             grabbedOb = other.gameObject;
         }
+        if (other.gameObject.CompareTag("ScoatePahar"))
+        {
+            grabbedPahar = other.gameObject;
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -102,6 +124,21 @@ public class tacleMove : MonoBehaviour
                 grabbedOb = null;
             }
         }
+    }
+
+    private void paharSpawn()
+    {
+        /*GameObject prefab_obj = Instantiate(
+            pahar,
+            new Vector3(this.transform.position.x, this.transform.position.y , this.transform.position.z),
+            Quaternion.identity,
+            transform
+            );
+        prefab_obj.name = "cup";
+        prefab_obj.transform.SetParent(null);
+        prefab_obj.transform.localScale = new Vector3(5, 5, 0);
+*/
+      cup =  Instantiate(pahar, this.transform.position, Quaternion.identity);
     }
 
 }
