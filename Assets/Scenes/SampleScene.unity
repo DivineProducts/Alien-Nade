@@ -1650,11 +1650,12 @@ GameObject:
   m_Component:
   - component: {fileID: 503296061}
   - component: {fileID: 503296065}
+  - component: {fileID: 503296067}
   - component: {fileID: 503296064}
   - component: {fileID: 503296063}
   - component: {fileID: 503296062}
   - component: {fileID: 503296066}
-  - component: {fileID: 503296067}
+  - component: {fileID: 503296068}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -1849,6 +1850,52 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 11
   m_SortAtRoot: 0
+--- !u!61 &503296068
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503296060}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.00431443, y: 0.00087088346}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.49604934, y: 0.5235771}
+    oldSize: {x: 0.32, y: 0.34}
+    newSize: {x: 0.32, y: 0.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.19780846, y: 0.3577742}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,7 +3585,7 @@ GameObject:
   - component: {fileID: 1281105337}
   m_Layer: 0
   m_Name: Cup
-  m_TagString: Untagged
+  m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3553,7 +3600,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_SortAtRoot: 0
 --- !u!212 &1281105334
 SpriteRenderer:
@@ -3619,7 +3666,7 @@ Transform:
   m_GameObject: {fileID: 1281105332}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.82, y: -1.86, z: -0.29252598}
+  m_LocalPosition: {x: 0.36, y: -1.86, z: -0.29252598}
   m_LocalScale: {x: 2.5203, y: 2.5203, z: 2.5203}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3638,7 +3685,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.0001
-  m_LinearDamping: 0
+  m_LinearDamping: 3
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -3651,7 +3698,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1281105337
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3686,7 +3733,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0051190406, y: 0.2868966}
+  m_Offset: {x: 0.017277002, y: 0.2785838}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.48809525, y: -0.051724136}
@@ -3696,7 +3743,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.43, y: 0.52}
+  m_Size: {x: 0.36415046, y: 0.5033744}
   m_EdgeRadius: 0
 --- !u!1 &1369598515
 GameObject:
