@@ -1460,7 +1460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37e97e504363c2448d70db37cf40e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pahareRamase: 0
+  pahareRamase: 6
   jumate: {fileID: -1131662984770868010, guid: 5f296bb15bd72e94d946226451a90d59, type: 3}
   treime: {fileID: 8658494288138813368, guid: 5f296bb15bd72e94d946226451a90d59, type: 3}
 --- !u!1 &465857833
