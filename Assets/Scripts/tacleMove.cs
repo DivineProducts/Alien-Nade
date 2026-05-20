@@ -28,14 +28,16 @@ public class tacleMove : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Z))
         {
             if (grabbedOb != null)
-            {
                 grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
                 grabbedOb = null;
-            }
             if (grabbedPahar != null)
-            {
                 grabbedPahar = null;
-            }
+            if (butonUp != null)
+                butonUp = null;
+            if (butonDown != null)
+                butonDown = null;
+            if (grabbedLamaie != null)
+                grabbedLamaie = null;
             if (tine)
             {
                 // da drumul
@@ -63,7 +65,6 @@ public class tacleMove : MonoBehaviour
             if (grabbedPahar != null)
             {
                 tine = true;
-
                 paharSpawn();
                 grabbedOb = cup;
                 grabbedPahar.GetComponent<pahareControl>().schimbaSprite();
