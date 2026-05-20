@@ -15,6 +15,7 @@ public class tacleMove : MonoBehaviour
     private GameObject grabbedPahar;
     private GameObject grabbedLamaie;
     private GameObject grabbedZahar;
+    private GameObject grabbedGheata;
     public bool tine = false;
 
     private GameObject butonDown;
@@ -26,6 +27,8 @@ public class tacleMove : MonoBehaviour
     private GameObject lemon;
     public GameObject zahar;
     private GameObject sugar;
+    private GameObject ice;
+    public GameObject gheata;
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.Z))
@@ -43,6 +46,8 @@ public class tacleMove : MonoBehaviour
                 grabbedLamaie = null;
             if (grabbedZahar != null)
                 grabbedZahar = null;
+            if (grabbedGheata!= null)
+                grabbedGheata = null;
             if (tine)
             {
                 // da drumul
@@ -87,6 +92,13 @@ public class tacleMove : MonoBehaviour
                 zaharSpawn();
                 grabbedOb = sugar;
                 grabbedZahar.GetComponent<zaharControl>().schimbaSprite();
+            }
+            if (grabbedGheata != null)
+            {
+                tine = true;
+                gheataSpawn();
+                grabbedOb = ice;
+                grabbedGheata.GetComponent<gheataControl>().schimbaSprite();
             }
             if (butonDown != null)
             {
@@ -162,6 +174,10 @@ public class tacleMove : MonoBehaviour
             {
                 grabbedZahar = other.gameObject;
             }
+            if (other.gameObject.CompareTag("ScoateGheata"))
+            {
+                grabbedGheata = other.gameObject;
+            }
             if (other.gameObject.CompareTag("down"))
             {
                 butonDown = other.gameObject;
@@ -186,6 +202,7 @@ public class tacleMove : MonoBehaviour
                 grabbedPahar = null;
                 grabbedLamaie = null;
                 grabbedZahar = null;
+                grabbedGheata = null;
             }
         }
     }
@@ -212,5 +229,9 @@ public class tacleMove : MonoBehaviour
     private void zaharSpawn()
     {
         sugar = Instantiate(zahar, this.transform.position, Quaternion.identity);
+    }
+    private void gheataSpawn()
+    {
+        ice = Instantiate(gheata, this.transform.position, Quaternion.identity);
     }
 }
