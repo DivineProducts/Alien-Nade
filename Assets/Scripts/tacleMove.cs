@@ -128,12 +128,15 @@ public class tacleMove : MonoBehaviour
         if (tine == true)
         {
             if (grabbedOb != null)
+            {
                 if (grabbedOb.GetComponent<BoxCollider2D>().isTrigger == false)
                     grabbedOb.GetComponent<BoxCollider2D>().isTrigger = true;
-            
-            Vector3 mouseReal2 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 targetPos = mouseReal2 + distObMous;
-            grabbedOb.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(GetComponent<Rigidbody2D>().position, targetPos, followSpeed * Time.fixedDeltaTime));
+
+                Vector3 mouseReal2 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 targetPos = mouseReal2 + distObMous;
+                grabbedOb.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(GetComponent<Rigidbody2D>().position, targetPos, followSpeed * Time.fixedDeltaTime));
+
+            }
         }
 
     }

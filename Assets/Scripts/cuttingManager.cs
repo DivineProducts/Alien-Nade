@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class cuttingManager : MonoBehaviour
 {
-    public GameObject manaDreapta;
+    public GameObject mana;
     public GameObject copiiLamai;
     public GameObject pozitieSpawn;
 
@@ -10,7 +10,7 @@ public class cuttingManager : MonoBehaviour
     private GameObject lemon;
     void Start()
     {
-        manaDreapta.SetActive(false);
+        mana.SetActive(false);
         for(int i=1; i<= copiiLamai.transform.childCount; i++)
         {
             lamaieSpawn();

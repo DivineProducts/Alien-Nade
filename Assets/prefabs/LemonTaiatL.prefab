@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8626996755141485471}
   - component: {fileID: 5909636795713352503}
   - component: {fileID: 6263291456226788412}
+  - component: {fileID: -8539366606190202622}
   m_Layer: 0
   m_Name: LemonTaiatL
   m_TagString: Grabbable
@@ -175,3 +176,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3293475, y: 0.2689047}
   m_EdgeRadius: 0
+--- !u!114 &-8539366606190202622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2746140851038047189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439398e012629be4997f12f64e672d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ml: 0
