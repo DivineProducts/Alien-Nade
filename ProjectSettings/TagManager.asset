@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Grabbable
   - ScoatePahar
+  - down
+  - up
   layers:
   - Default
   - TransparentFX

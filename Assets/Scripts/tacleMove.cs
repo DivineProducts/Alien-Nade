@@ -15,6 +15,7 @@ public class tacleMove : MonoBehaviour
     private GameObject grabbedPahar;
     private bool tine = false;
 
+    private GameObject butonDown;
     //prfabs
     private GameObject cup;
     public GameObject pahar;
@@ -40,6 +41,7 @@ public class tacleMove : MonoBehaviour
             this.GetComponent<SpriteRenderer>().sprite = straight;
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
+
         //  transforma obiectul intrunul static
         if (Input.GetKeyDown(KeyCode.Z))
         {
@@ -62,6 +64,10 @@ public class tacleMove : MonoBehaviour
                 grabbedOb = cup;
                 grabbedPahar.GetComponent<pahareControl>().schimbaSprite();
 
+            }
+            if (butonDown != null)
+            {
+                butonDown.GetComponent<cameraMove>().down();
             }
             
         }
@@ -112,6 +118,10 @@ public class tacleMove : MonoBehaviour
         if (other.gameObject.CompareTag("ScoatePahar"))
         {
             grabbedPahar = other.gameObject;
+        }
+        if (other.gameObject.CompareTag("down"))
+        {
+            butonDown = other.gameObject;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
