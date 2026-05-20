@@ -27,6 +27,8 @@ public class tacleMove : MonoBehaviour
     private GameObject lemon;
     public GameObject zahar;
     private GameObject sugar;
+    public GameObject gheata;
+    private GameObject ice;
     public GameObject cutMiniGame;
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine

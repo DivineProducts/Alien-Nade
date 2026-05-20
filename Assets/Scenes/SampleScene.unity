@@ -2050,6 +2050,7 @@ MonoBehaviour:
   pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
+  gheata: {fileID: 787941522198254568, guid: f68c422b283d0d6478574b7cbf6c0dad, type: 3}
   cutMiniGame: {fileID: 9025001380198091882, guid: a8bc3283732ae24418ba6fe6055129a8, type: 3}
 --- !u!210 &503296067
 SortingGroup:
@@ -6238,7 +6239,7 @@ Transform:
   m_GameObject: {fileID: 1710449251}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.48, y: -0.67, z: -0.047283337}
+  m_LocalPosition: {x: -8.75, y: 1.3, z: -0.047283337}
   m_LocalScale: {x: 2.520565, y: 2.520565, z: 2.520565}
   m_ConstrainProportionsScale: 0
   m_Children: []
