@@ -8,7 +8,7 @@ public class tacleMove : MonoBehaviour
     private Vector3 distObMous;
     private bool urmareste = false;
     private bool stop = false;
-
+    public GameObject lamai;
 
     //grabbing stuff
     private GameObject grabbedOb;
@@ -204,6 +204,7 @@ public class tacleMove : MonoBehaviour
     private void lamaieSpawn()
     {
         lemon = Instantiate(lamaie, this.transform.position, Quaternion.identity);
+        lemon.transform.SetParent(lamai.transform);
     }
     private void zaharSpawn()
     {
