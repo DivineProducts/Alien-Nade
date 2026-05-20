@@ -13,12 +13,16 @@ public class tacleMove : MonoBehaviour
     //grabbing stuff
     private GameObject grabbedOb;
     private GameObject grabbedPahar;
+    private GameObject grabbedLamaie;
     private bool tine = false;
 
     private GameObject butonDown;
+    private GameObject butonUp;
     //prfabs
     private GameObject cup;
     public GameObject pahar;
+    public GameObject lamaie;
+    private GameObject lemon;
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.Z))
@@ -63,11 +67,24 @@ public class tacleMove : MonoBehaviour
                 paharSpawn();
                 grabbedOb = cup;
                 grabbedPahar.GetComponent<pahareControl>().schimbaSprite();
-
+            }
+            if(grabbedLamaie != null)
+            {
+                tine = true;
+                lamaieSpawn();
+                grabbedOb = lemon;
+                grabbedLamaie.GetComponent<lamaiControl>().schimbaSprite();
             }
             if (butonDown != null)
             {
-                butonDown.GetComponent<cameraMove>().down();
+                butonDown.GetComponent<cameraMove>().move();
+                butonDown = null;
+            }
+            if (butonUp != null)
+            {
+                /*Debug.Log("merge");*/
+                butonUp.GetComponent<cameraMove>().move();
+                butonUp = null;
             }
             
         }
@@ -119,9 +136,17 @@ public class tacleMove : MonoBehaviour
         {
             grabbedPahar = other.gameObject;
         }
+        if (other.gameObject.CompareTag("ScoateLamaie"))
+        {
+            grabbedLamaie = other.gameObject;
+        }
         if (other.gameObject.CompareTag("down"))
         {
             butonDown = other.gameObject;
+        }
+        if (other.gameObject.CompareTag("up"))
+        {
+            butonUp = other.gameObject;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -132,6 +157,10 @@ public class tacleMove : MonoBehaviour
             {
                 grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
                 grabbedOb = null;
+                butonUp = null;
+                butonDown = null;
+                grabbedPahar = null;
+                grabbedLamaie = null;
             }
         }
     }
@@ -149,6 +178,20 @@ public class tacleMove : MonoBehaviour
         prefab_obj.transform.localScale = new Vector3(5, 5, 0);
 */
       cup =  Instantiate(pahar, this.transform.position, Quaternion.identity);
+    }
+    private void lamaieSpawn()
+    {
+        /*GameObject prefab_obj = Instantiate(
+            pahar,
+            new Vector3(this.transform.position.x, this.transform.position.y , this.transform.position.z),
+            Quaternion.identity,
+            transform
+            );
+        prefab_obj.name = "cup";
+        prefab_obj.transform.SetParent(null);
+        prefab_obj.transform.localScale = new Vector3(5, 5, 0);
+*/
+        lemon = Instantiate(lamaie, this.transform.position, Quaternion.identity);
     }
 
 }
