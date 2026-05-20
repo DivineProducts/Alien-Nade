@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a5a9a8bcf56fe140bb771c79cabe486
+guid: ed5938e5439763f458a6734699d94c5d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639147768243974100
+  platformSettingsDirtyTick: 639149236429703015
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: undertable-Sheet
+  - name: woman
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.616095, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 500
-      height: 170
-    spriteID: 06ca7cda6c332004780c2d60fb032733
+      width: 379
+      height: 227
+    spriteID: 164683d5ac71fa144b48454c514f9fc0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,7 +145,28 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: undertable-Sheet_0
+  - name: woman_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 4
+      width: 150
+      height: 211
+    spriteID: 45978c06e7d9929478ac44d8f5101f2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: woman_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -155,9 +176,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 500
-      height: 287
-    spriteID: 8b6c57db76b843a46933350683b8dae8
+      width: 138
+      height: 227
+    spriteID: 331133e87e64cd34186ab9902caa7c55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -168,21 +189,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 1247664326
-    name: undertable-Sheet
+    guid: -367554968
+    name: woman
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: undertable-Sheet
+    - name: woman
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
+        x: 81
         y: 0
-        width: 500
-        height: 288
-      spriteId: 06ca7cda6c332004780c2d60fb032733
+        width: 379
+        height: 227
+      spriteId: 164683d5ac71fa144b48454c514f9fc0
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -249,5 +270,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 500, y: 288}
-  previousTextureSize: {x: 512, y: 512}
+  canvasSize: {x: 629, y: 211}
+  previousTextureSize: {x: 512, y: 256}

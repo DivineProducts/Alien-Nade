@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a5a9a8bcf56fe140bb771c79cabe486
+guid: d26a68c2bd8e39442aa8e3f02fb030ec
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639147768243974100
+  platformSettingsDirtyTick: 639149239465966559
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: undertable-Sheet
+  - name: From Above Blender
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.49795923, y: -0.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 500
-      height: 170
-    spriteID: 06ca7cda6c332004780c2d60fb032733
+      width: 245
+      height: 35
+    spriteID: 564dbba28ad4eae4fb44272c967d91d4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,7 +145,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: undertable-Sheet_0
+  - name: From Above Blender_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -153,11 +153,32 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
+      x: 61
       y: 4
-      width: 500
-      height: 287
-    spriteID: 8b6c57db76b843a46933350683b8dae8
+      width: 43
+      height: 34
+    spriteID: 3dc7229f1b457bb45bba7bafa2b6caa4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: From Above Blender_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 4
+      width: 43
+      height: 33
+    spriteID: ee37455047d6e674786b0e80041e4ca7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -168,21 +189,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 1247664326
-    name: undertable-Sheet
+    guid: 846667743
+    name: From Above Blender
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: undertable-Sheet
+    - name: From Above Blender
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 500
-        height: 288
-      spriteId: 06ca7cda6c332004780c2d60fb032733
+        x: 16
+        y: 7
+        width: 245
+        height: 35
+      spriteId: 564dbba28ad4eae4fb44272c967d91d4
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -249,5 +270,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 500, y: 288}
-  previousTextureSize: {x: 512, y: 512}
+  canvasSize: {x: 276, y: 50}
+  previousTextureSize: {x: 256, y: 64}
