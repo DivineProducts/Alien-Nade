@@ -27,14 +27,17 @@ public class tacleMove : MonoBehaviour
     private GameObject lemon;
     public GameObject zahar;
     private GameObject sugar;
-    private GameObject ice;
-    public GameObject gheata;
+    public GameObject cutMiniGame;
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.Z))
         {
             if (grabbedOb != null)
+            {
+               if( grabbedOb.name== "cuttingBoard")
+                    Instantiate(cutMiniGame, new Vector3(-15.8900003f, -2.70000005f, -0.100787707f), Quaternion.identity);
                 grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
+            }
                 grabbedOb = null;
             if (grabbedPahar != null)
                 grabbedPahar = null;
