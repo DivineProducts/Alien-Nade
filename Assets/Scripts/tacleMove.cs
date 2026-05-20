@@ -8,7 +8,7 @@ public class tacleMove : MonoBehaviour
     private Vector3 distObMous;
     private bool urmareste = false;
     private bool stop = false;
-
+    public GameObject lamai;
 
     //grabbing stuff
     private GameObject grabbedOb;
@@ -128,12 +128,15 @@ public class tacleMove : MonoBehaviour
         if (tine == true)
         {
             if (grabbedOb != null)
+            {
                 if (grabbedOb.GetComponent<BoxCollider2D>().isTrigger == false)
                     grabbedOb.GetComponent<BoxCollider2D>().isTrigger = true;
-            
-            Vector3 mouseReal2 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 targetPos = mouseReal2 + distObMous;
-            grabbedOb.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(GetComponent<Rigidbody2D>().position, targetPos, followSpeed * Time.fixedDeltaTime));
+
+                Vector3 mouseReal2 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 targetPos = mouseReal2 + distObMous;
+                grabbedOb.GetComponent<Rigidbody2D>().MovePosition(Vector2.Lerp(GetComponent<Rigidbody2D>().position, targetPos, followSpeed * Time.fixedDeltaTime));
+
+            }
         }
 
     }
@@ -204,6 +207,7 @@ public class tacleMove : MonoBehaviour
     private void lamaieSpawn()
     {
         lemon = Instantiate(lamaie, this.transform.position, Quaternion.identity);
+        lemon.transform.SetParent(lamai.transform);
     }
     private void zaharSpawn()
     {
