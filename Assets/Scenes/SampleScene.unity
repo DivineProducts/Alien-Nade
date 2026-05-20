@@ -2050,6 +2050,7 @@ MonoBehaviour:
   pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
+  cutMiniGame: {fileID: 9025001380198091882, guid: a8bc3283732ae24418ba6fe6055129a8, type: 3}
 --- !u!210 &503296067
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -2673,7 +2674,7 @@ GameObject:
   - component: {fileID: 606348735}
   m_Layer: 0
   m_Name: lamai
-  m_TagString: Untagged
+  m_TagString: tataLamaie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3171,7 +3172,7 @@ GameObject:
   - component: {fileID: 774181649}
   m_Layer: 0
   m_Name: TentacleL
-  m_TagString: Untagged
+  m_TagString: tentaculL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

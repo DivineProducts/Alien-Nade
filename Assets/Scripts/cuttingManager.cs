@@ -10,8 +10,10 @@ public class cuttingManager : MonoBehaviour
     private GameObject lemon;
     void Start()
     {
-        mana.SetActive(false);
-        for(int i=1; i<= copiiLamai.transform.childCount; i++)
+        mana = GameObject.FindGameObjectWithTag("tentaculL");
+        GameObject.FindGameObjectWithTag("tentaculL").SetActive(false);
+        copiiLamai = GameObject.FindWithTag("tataLamaie");
+        for (int i=1; i<= GameObject.FindWithTag("tataLamaie").transform.childCount; i++)
         {
             lamaieSpawn();
         }
