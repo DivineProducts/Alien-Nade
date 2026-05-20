@@ -10,8 +10,20 @@ TagManager:
   - up
   - ScoateLamaie
   - ScoateZahar
+
   - tentaculL
   - tataLamaie
+
+  - backAPP
+  - merketAPP
+  - settingsAPP
+  - exitAPP
+  - BuyLemon
+  - BuySugah
+  - BuyCups
+  - BuyIce
+  - ExitMark
+
   layers:
   - Default
   - TransparentFX

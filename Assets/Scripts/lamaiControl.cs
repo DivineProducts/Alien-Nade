@@ -5,6 +5,7 @@ public class lamaiControl : MonoBehaviour
     public int lamaiRamase;
     public Sprite jumate;
     public Sprite gol;
+    public Sprite plin;
 
     public void scade()
     {
@@ -13,6 +14,8 @@ public class lamaiControl : MonoBehaviour
     public void schimbaSprite()
     {
         lamaiRamase--;
+        if (lamaiRamase == 9)
+        { this.gameObject.GetComponent<SpriteRenderer>().sprite = plin; }
         if (lamaiRamase == 6)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = jumate;
         /*if (lamaiRamase == 3)
