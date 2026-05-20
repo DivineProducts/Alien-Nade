@@ -129,25 +129,28 @@ public class tacleMove : MonoBehaviour
     //Grabbing stuff
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Grabbable"))
+        if (!tine)
         {
-            grabbedOb = other.gameObject;
-        }
-        if (other.gameObject.CompareTag("ScoatePahar"))
-        {
-            grabbedPahar = other.gameObject;
-        }
-        if (other.gameObject.CompareTag("ScoateLamaie"))
-        {
-            grabbedLamaie = other.gameObject;
-        }
-        if (other.gameObject.CompareTag("down"))
-        {
-            butonDown = other.gameObject;
-        }
-        if (other.gameObject.CompareTag("up"))
-        {
-            butonUp = other.gameObject;
+            if (other.gameObject.CompareTag("Grabbable"))
+            {
+                grabbedOb = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("ScoatePahar"))
+            {
+                grabbedPahar = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("ScoateLamaie"))
+            {
+                grabbedLamaie = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("down"))
+            {
+                butonDown = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("up"))
+            {
+                butonUp = other.gameObject;
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
