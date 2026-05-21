@@ -121,8 +121,6 @@ public class tacleMoveR : MonoBehaviour
             urmareste = true;
             Vector2 mouseReal = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             distObMous = GetComponent<Rigidbody2D>().position - mouseReal;
-            Vector3 mouseReal2 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 targetPos = mouseReal2 + distObMous;
         }
         else
         if (Input.GetMouseButtonUp(1))
