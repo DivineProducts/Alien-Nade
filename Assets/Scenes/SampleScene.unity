@@ -845,7 +845,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 11.083878, y: -3.2124066}
+  m_ConnectedAnchor: {x: 11.703791, y: -3.2107234}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -864,7 +864,7 @@ Transform:
   m_GameObject: {fileID: 204630616}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.585, z: 0}
+  m_LocalPosition: {x: -0.013, y: -2.736, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1078,6 +1078,7 @@ GameObject:
   - component: {fileID: 313023630}
   - component: {fileID: 313023628}
   - component: {fileID: 313023634}
+  - component: {fileID: 313023635}
   m_Layer: 0
   m_Name: base
   m_TagString: Untagged
@@ -1127,8 +1128,8 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0.067508295, y: -0.16190149}
-  m_ConnectedAnchor: {x: 0.017508395, y: 0.037098594}
+  m_Anchor: {x: 0.046938594, y: -0.16370703}
+  m_ConnectedAnchor: {x: -0.0030613062, y: 0.035293043}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -1146,11 +1147,11 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313023626}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 100
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0.5
@@ -1271,7 +1272,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curved: {fileID: -2745393177162047626, guid: d035f56a79808a74098491908a11be0b, type: 3}
   straight: {fileID: -5440693265787819912, guid: 734bf7ceddd184846be6f03207508d26, type: 3}
-  followSpeedR: 15
+  followSpeed: 15
+  lamai: {fileID: 606348734}
+  tine: 0
+  pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
+  lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
+  zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
+  gheata: {fileID: 787941522198254568, guid: f68c422b283d0d6478574b7cbf6c0dad, type: 3}
+--- !u!61 &313023635
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313023626}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.035084683, y: -0.008016199}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.49604934, y: 0.5235771}
+    oldSize: {x: 0.32, y: 0.34}
+    newSize: {x: 0.32, y: 0.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.21305451, y: 0.34}
+  m_EdgeRadius: 0
 --- !u!1 &412667906
 GameObject:
   m_ObjectHideFlags: 0
