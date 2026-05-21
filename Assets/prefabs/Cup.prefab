@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4999708954255212299}
   - component: {fileID: 1234107847125704946}
   - component: {fileID: 3676881855537563933}
+  - component: {fileID: 3598773545607095143}
   m_Layer: 0
   m_Name: Cup
   m_TagString: Grabbable
@@ -175,3 +176,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.36415046, y: 0.5033744}
   m_EdgeRadius: 0
+--- !u!114 &3598773545607095143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6981165305278403073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409d68a82494cd44b923e8ff3e7afacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CntLamaiP: 0
+  CntZaharP: 0
+  CntGheataP: 0
+  ObiectAtins: {fileID: 0}
+  CuGheata: {fileID: 5912483656487108818, guid: 775852b51a34e884c9ad3256fa379435, type: 3}
+  CuLimon: {fileID: 0}

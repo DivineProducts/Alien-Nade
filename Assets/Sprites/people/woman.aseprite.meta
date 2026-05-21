@@ -147,8 +147,8 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: woman_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5106057, y: 0.46732077}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -168,8 +168,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: woman_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5023056, y: 0.49018866}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
       cellRect:
         x: 81
         y: 0
-        width: 379
+        width: 352
         height: 227
       spriteId: 164683d5ac71fa144b48454c514f9fc0
     linkedCells: []
@@ -270,5 +270,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 629, y: 211}
+  canvasSize: {x: 629, y: 262}
   previousTextureSize: {x: 512, y: 256}

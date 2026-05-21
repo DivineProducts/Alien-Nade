@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 725924215848671184}
   - component: {fileID: 568117052658819875}
   - component: {fileID: 1770724561711057230}
+  - component: {fileID: 3027688786019350850}
   m_Layer: 0
   m_Name: Zahar
   m_TagString: Grabbable
@@ -175,3 +176,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.55189383, y: 0.48632795}
   m_EdgeRadius: 0
+--- !u!114 &3027688786019350850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857263881818547917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3c5b05e352b474c8e527da9ef345ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
