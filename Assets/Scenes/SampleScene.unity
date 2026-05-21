@@ -1279,6 +1279,7 @@ MonoBehaviour:
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
   gheata: {fileID: 787941522198254568, guid: f68c422b283d0d6478574b7cbf6c0dad, type: 3}
+  storsMiniGame: {fileID: 7797210286984886877, guid: 0d8ee0a59258e7d44a24aea98e2973b0, type: 3}
 --- !u!61 &313023635
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2857,7 +2858,7 @@ Transform:
   m_GameObject: {fileID: 670487619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.53, y: 2.59, z: 0.026859961}
+  m_LocalPosition: {x: 1.53, y: 2.61, z: 0.026859961}
   m_LocalScale: {x: 4.2475944, y: 4.2475944, z: 4.2475944}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6916,6 +6917,7 @@ MonoBehaviour:
   umplut: 0
   plin: {fileID: -2448222092427123066, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
   gol: {fileID: -4063909749465467856, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
+  capacitate: 0
 --- !u!1 &1910409513
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ public class umplutSauNu : MonoBehaviour
     public bool umplut;
     public Sprite plin;
     public Sprite gol;
+    public float capacitate;
     /*private void OnValidate()
     {
         if (umplut)

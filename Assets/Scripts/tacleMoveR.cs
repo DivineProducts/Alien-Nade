@@ -29,12 +29,15 @@ public class tacleMoveR : MonoBehaviour
     private GameObject sugar;
     public GameObject gheata;
     private GameObject ice;
+    public GameObject storsMiniGame;
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.X))
         {
             if (grabbedOb != null)
             {
+                if (grabbedOb.name == "storcator" && GameObject.Find("storcator").transform.GetComponent<umplutSauNu>().capacitate<300)
+                    Instantiate(storsMiniGame, new Vector3(-6.86999989f, -1.5f, 0), Quaternion.identity);
                 grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
             }
             grabbedOb = null;

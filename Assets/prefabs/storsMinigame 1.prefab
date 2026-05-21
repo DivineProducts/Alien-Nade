@@ -117,7 +117,7 @@ MonoBehaviour:
   strainer: {fileID: 733818007037412522}
   completedRotations: 0
   lamaiStoarse: 0
-  capacitate: 0
+  exit: {fileID: 6030409727814795973}
 --- !u!1 &615205573830271459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,6 +2118,7 @@ MonoBehaviour:
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
   gheata: {fileID: 787941522198254568, guid: f68c422b283d0d6478574b7cbf6c0dad, type: 3}
+  storsMiniGame: {fileID: 0}
 --- !u!61 &4075100336054108312
 BoxCollider2D:
   m_ObjectHideFlags: 0

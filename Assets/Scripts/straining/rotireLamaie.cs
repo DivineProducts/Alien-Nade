@@ -7,9 +7,9 @@ public class rotireLamaie : MonoBehaviour
     /*public GameObject storcator;*/
     public bool completedRotations = false;
     public int lamaiStoarse;
-    public float capacitate = 0;
     private float totalRotation = 0f;
     private float lastAngle = 0f;
+    public GameObject exit;
     private void Start()
     {
         // de unde incep rotirile, ca sa nu trebuieasca sa resetam unghiul de fiecare data
@@ -20,7 +20,7 @@ public class rotireLamaie : MonoBehaviour
 
     private void Update()
     {
-        if (storcatoare.activeSelf )
+        if (storcatoare.activeSelf)
         {  //astea rotesc
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0f;
@@ -36,7 +36,7 @@ public class rotireLamaie : MonoBehaviour
 
             if (totalRotation >= 2880f)
             {
-                capacitate += strainer.GetComponent<strainer>().cantitateSave;
+                GameObject.Find("storcator").transform.GetComponent<umplutSauNu>().capacitate += strainer.GetComponent<strainer>().cantitateSave;
 
                 lamaiStoarse++;
                 totalRotation = 0;
@@ -46,8 +46,9 @@ public class rotireLamaie : MonoBehaviour
                 Debug.Log("8");
             }
         }
-        if (capacitate >= 300)
+        if (GameObject.Find("storcator").transform.GetComponent<umplutSauNu>().capacitate >= 300)
         {
+            exit.gameObject.transform.GetComponent<butonExitStrain>().iesireFortata();
             GameObject.Find("storcator").transform.GetComponent<umplutSauNu>().umplut = true;
             
         }
