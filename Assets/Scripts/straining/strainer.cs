@@ -4,7 +4,8 @@ public class strainer : MonoBehaviour
 {
     public GameObject mana;
     public GameObject storcatoare;
-    /*public GameObject storcator;*/
+    public float cantitateSave;
+   
     private void OnTriggerEnter2D(Collider2D other)
     {
         /*Debug.Log("a atins");*/
@@ -12,6 +13,7 @@ public class strainer : MonoBehaviour
         {
             mana.SetActive(false);
             storcatoare.SetActive(true);
+            cantitateSave = other.GetComponent<cantitate>().ml;
             /*storcator.SetActive(true);*/
 
             Debug.Log("a mers");

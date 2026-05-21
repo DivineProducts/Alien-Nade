@@ -878,6 +878,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 872998154}
     m_Modifications:
+    - target: {fileID: -8539366606190202622, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
+      propertyPath: ml
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 2746140851038047189, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
       propertyPath: m_Name
       value: LemonTaiatL (1)
@@ -9016,6 +9020,7 @@ GameObject:
   - component: {fileID: 1857566307}
   - component: {fileID: 1857566306}
   - component: {fileID: 1857566305}
+  - component: {fileID: 1857566310}
   m_Layer: 0
   m_Name: storcator
   m_TagString: Grabbable
@@ -9178,6 +9183,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857566310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857566304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b451a73a4b36bc4b9a39f4f8cf520be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  umplut: 0
+  plin: {fileID: -2448222092427123066, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
+  gol: {fileID: -4063909749465467856, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
 --- !u!1 &1910409513
 GameObject:
   m_ObjectHideFlags: 0
@@ -9379,6 +9399,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 872998154}
     m_Modifications:
+    - target: {fileID: -8539366606190202622, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
+      propertyPath: ml
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 2746140851038047189, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
       propertyPath: m_Name
       value: LemonTaiatL
@@ -9911,6 +9935,7 @@ GameObject:
   - component: {fileID: 4442773956665733227}
   - component: {fileID: 5488547118643383729}
   - component: {fileID: 656887525577042732}
+  - component: {fileID: 5488547118643383730}
   m_Layer: 1
   m_Name: jumateRotim
   m_TagString: Untagged
@@ -10179,7 +10204,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.05679199, y: -0.0068808272}
+  m_Offset: {x: 0.0041585714, y: 0.004043117}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10189,7 +10214,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5868122, y: 0.3841716}
+  m_Size: {x: 0.4418219, y: 0.33848968}
   m_EdgeRadius: 0
 --- !u!114 &1050129541172448320
 MonoBehaviour:
@@ -11465,6 +11490,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5488547118643383730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206542326104596049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e510f13cf2fb6a42a6c0e4a694ac3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storcatoare: {fileID: 206542326104596049}
+  strainer: {fileID: 4672007399692692147}
+  completedRotations: 0
+  capacitate: 0
 --- !u!4 &5502786860038056341
 Transform:
   m_ObjectHideFlags: 0
@@ -12158,6 +12199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mana: {fileID: 547584768}
   storcatoare: {fileID: 206542326104596049}
+  cantitateSave: 0
 --- !u!114 &6908759603202160356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12644,6 +12686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mana: {fileID: 547584768}
   storcatoare: {fileID: 4672007399692692147}
+  cantitateSave: 0
 --- !u!61 &8639980024870099348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12820,6 +12863,7 @@ MonoBehaviour:
   copiiJumatati: {fileID: 0}
   pozitieSpawn: {fileID: 6638876720653854670}
   jumate: {fileID: 6760248926738080499, guid: 8e7c28bda9241f04e92f7e5c2aeb8315, type: 3}
+  i: 1
 --- !u!212 &9154575364065665514
 SpriteRenderer:
   m_ObjectHideFlags: 0
