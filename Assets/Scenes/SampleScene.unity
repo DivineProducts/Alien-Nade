@@ -1707,6 +1707,7 @@ MonoBehaviour:
   pahareRamase: 6
   jumate: {fileID: -1131662984770868010, guid: 5f296bb15bd72e94d946226451a90d59, type: 3}
   treime: {fileID: 8658494288138813368, guid: 5f296bb15bd72e94d946226451a90d59, type: 3}
+  plin: {fileID: 9120514972799319594, guid: 5f296bb15bd72e94d946226451a90d59, type: 3}
 --- !u!1 &465857833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,6 +2106,18 @@ MonoBehaviour:
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
   gheata: {fileID: 787941522198254568, guid: f68c422b283d0d6478574b7cbf6c0dad, type: 3}
   cutMiniGame: {fileID: 9025001380198091882, guid: a8bc3283732ae24418ba6fe6055129a8, type: 3}
+  phone: {fileID: 0}
+  Butoane: {fileID: 0}
+  Xmark: {fileID: 0}
+  Backb: {fileID: 0}
+  Marketb: {fileID: 0}
+  Settingsb: {fileID: 0}
+  Exitb: {fileID: 0}
+  BuyLemon: {fileID: 0}
+  BuySugar: {fileID: 0}
+  BuyCups: {fileID: 0}
+  BuyIce: {fileID: 0}
+  SXmark: {fileID: 0}
 --- !u!210 &503296067
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -3214,6 +3227,7 @@ MonoBehaviour:
   lamaiRamase: 9
   jumate: {fileID: 7205585437791813213, guid: 3c34d7ca2384214448713b6c652ec240, type: 3}
   gol: {fileID: 4768811682880591706, guid: 3c34d7ca2384214448713b6c652ec240, type: 3}
+  plin: {fileID: 2202849953302823801, guid: 3c34d7ca2384214448713b6c652ec240, type: 3}
 --- !u!1 &774181646
 GameObject:
   m_ObjectHideFlags: 0
@@ -6310,7 +6324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c559af9d545935468057dd8b010a26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zaharRamase: 0
+  zaharRamase: 6
 --- !u!1 &1722369215
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,5 +6,6 @@ public class zaharControl : MonoBehaviour
     public void schimbaSprite()
     {
         zaharRamase--;
+   
     }
 }

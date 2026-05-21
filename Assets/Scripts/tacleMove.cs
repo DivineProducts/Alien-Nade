@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class tacleMove : MonoBehaviour
@@ -30,6 +31,24 @@ public class tacleMove : MonoBehaviour
     public GameObject gheata;
     private GameObject ice;
     public GameObject cutMiniGame;
+
+
+    //telefon
+    public GameObject phone;
+    public GameObject Butoane;
+    public GameObject Xmark;
+    public GameObject Backb;
+    public GameObject Marketb;
+    public GameObject Settingsb;
+    public GameObject Exitb;
+
+    //market
+    public GameObject BuyLemon;
+    public GameObject BuySugar;
+    public GameObject BuyCups;
+    public GameObject BuyIce;
+    public GameObject SXmark;
+
     void Update()
     {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.Z))
@@ -53,6 +72,7 @@ public class tacleMove : MonoBehaviour
                 grabbedZahar = null;
             if (grabbedGheata!= null)
                 grabbedGheata = null;
+
             if (tine)
             {
                 // da drumul
@@ -116,7 +136,50 @@ public class tacleMove : MonoBehaviour
                 butonUp.GetComponent<cameraMove>().move();
                 butonUp = null;
             }
-            
+            if(Backb!=null)
+            {
+                Backb = null;
+            }
+            if(Marketb!=null)
+            {
+                Marketb.GetComponent<Telefon>().DeschideMarket();
+                Marketb = null;
+            }
+            if(Settingsb!=null)
+            {
+
+                Settingsb = null;
+            }
+            if(Exitb!=null)
+            {
+                Application.Quit();
+            }
+            if (BuyLemon != null)
+            {
+                BuyLemon.GetComponent<Telefon>().BuyL();
+                BuyLemon = null;
+            }
+            if (BuyCups != null)
+            {
+                BuyCups.GetComponent<Telefon>().BuyC();
+                BuyCups = null;
+            }
+            if (BuySugar != null)
+            {
+                BuySugar.GetComponent<Telefon>().BuyZ();
+                BuySugar = null;
+            }
+            if (BuyIce != null)
+            {
+                BuyIce.GetComponent<Telefon>().BuyI();
+                BuyIce = null;
+            }
+            if(SXmark != null)
+            {
+                SXmark.GetComponent<Telefon>().InchideMarket();
+                SXmark = null;
+            }
+
         }
 
         // uff, 0=LeftMouse; 1=RightMouse.... bagamias piciarele
@@ -175,7 +238,7 @@ public class tacleMove : MonoBehaviour
             {
                 grabbedLamaie = other.gameObject;
             }
-            if (other.gameObject.CompareTag("ScoateZahar"))
+            if (other.gameObject.CompareTag("ScoateZahar") && other.GetComponent<zaharControl>().zaharRamase !=0 )
             {
                 grabbedZahar = other.gameObject;
             }
@@ -191,7 +254,42 @@ public class tacleMove : MonoBehaviour
             {
                 butonUp = other.gameObject;
             }
-
+            if(other.gameObject.CompareTag("backAPP"))
+            {
+                Backb = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("merketAPP"))
+            {
+                Marketb = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("settingsAPP"))
+            {
+                Settingsb = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("exitAPP"))
+            {
+                Exitb = other.gameObject;
+            }
+            if(other.gameObject.CompareTag("BuyLemon"))
+            {
+                BuyLemon = other.gameObject;
+            }
+            if(other.gameObject.CompareTag("BuySugah"))
+            {
+                BuySugar = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("BuyCups"))
+            {
+                BuyCups = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("BuyIce"))
+            {
+                BuyIce = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("ExitMark"))
+            {
+                SXmark = other.gameObject;
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
