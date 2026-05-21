@@ -8,7 +8,7 @@ public class strainer : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         /*Debug.Log("a atins");*/
-        if (other.name == "LemonTaiatL(Clone)")
+        if (other.name == "LemonTaiatLFx(Clone)")
         {
             mana.SetActive(false);
             storcatoare.SetActive(true);
