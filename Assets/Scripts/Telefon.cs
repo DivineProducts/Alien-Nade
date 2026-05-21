@@ -63,7 +63,8 @@ public class Telefon : MonoBehaviour
 
     public void BuyI()
     {
-
+        Ice.GetComponent<gheataControl>().gheataRamasa = 7;
+        Ice.GetComponent<gheataControl>().schimbaSprite();
     }
 
     public void InchideMarket()
