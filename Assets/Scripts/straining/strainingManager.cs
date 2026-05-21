@@ -22,5 +22,6 @@ public class stors : MonoBehaviour
         half = Instantiate(jumate, pozitieSpawn.transform.position, Quaternion.identity);
         Debug.Log(GameObject.FindWithTag("tataJumatati").transform.GetChild(i - 1).GetComponent<cantitate>().ml);
         half.GetComponent<cantitate>().ml = GameObject.FindWithTag("tataJumatati").transform.GetChild(i-1).GetComponent<cantitate>().ml;
+        half.transform.parent=this.gameObject.transform;
     }
 }

@@ -6,6 +6,7 @@ public class rotireLamaie : MonoBehaviour
     public GameObject strainer;
     /*public GameObject storcator;*/
     public bool completedRotations = false;
+    public int lamaiStoarse;
     public float capacitate = 0;
     private float totalRotation = 0f;
     private float lastAngle = 0f;
@@ -36,7 +37,8 @@ public class rotireLamaie : MonoBehaviour
             if (totalRotation >= 2880f)
             {
                 capacitate += strainer.GetComponent<strainer>().cantitateSave;
-                
+
+                lamaiStoarse++;
                 totalRotation = 0;
                 lastAngle = 0;
                 storcatoare.SetActive(false);

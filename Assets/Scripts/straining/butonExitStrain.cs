@@ -3,6 +3,7 @@ using UnityEngine;
 public class butonExitStrain : MonoBehaviour
 {
     public GameObject joc;
+    public GameObject lamaieRotita;
     public GameObject manaStoarce;
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,7 +16,7 @@ public class butonExitStrain : MonoBehaviour
                 Transform child = joc.GetComponent<cuttingManager>().copiiLamai.transform.GetChild(1);
                 Vector3 pos = child.position;
             }*/
-            for (int i = 0; i < joc.GetComponent<stors>().copiiJumatati.transform.childCount; i++)
+            for (int i = 0; i < lamaieRotita.GetComponent<rotireLamaie>().lamaiStoarse; i++)
                 Destroy(joc.GetComponent<stors>().copiiJumatati.transform.GetChild(i).gameObject);
            
             Destroy(joc);
