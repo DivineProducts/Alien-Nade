@@ -31,7 +31,15 @@ public class tacleMoveR : MonoBehaviour
     private GameObject ice;
     public GameObject storsMiniGame;
     void Update()
-    {   // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            urmareste = false;
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            GetComponent<Rigidbody2D>().angularVelocity = 0f;
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        }
+        // doar il face sa devina inapoi dynamic ;  restul se reactiveaza de la sine
         if (Input.GetKeyUp(KeyCode.X))
         {
             if (grabbedOb != null)

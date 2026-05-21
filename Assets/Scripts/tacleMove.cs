@@ -84,6 +84,13 @@ public class tacleMove : MonoBehaviour
         }
 
         //  transforma obiectul intrunul static
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            urmareste = false;
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            GetComponent<Rigidbody2D>().angularVelocity = 0f;
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+        }
         if (Input.GetKeyDown(KeyCode.Z))
         {
             this.GetComponent<SpriteRenderer>().sprite = curved;
