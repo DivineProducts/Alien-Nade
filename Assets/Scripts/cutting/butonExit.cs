@@ -21,9 +21,10 @@ public class butonExit : MonoBehaviour
                 Vector3 pos = child.position;
                 GameObject h1 = Instantiate(half1, pos, Quaternion.identity);
                 h1.GetComponent<cantitate>().ml = cutit.GetComponent<moveing>().v[i, 0] * 100;
-
+                h1.GetComponent<Transform>().SetParent(GameObject.FindGameObjectWithTag("tataJumatati").transform);
                 GameObject h2 = Instantiate(half2, pos, Quaternion.identity);
                 h2.GetComponent<cantitate>().ml = cutit.GetComponent<moveing>().v[i, 1] * 100;
+                h2.GetComponent<Transform>().SetParent(GameObject.FindGameObjectWithTag("tataJumatati").transform);
 
             }
             for (int i = 0;  i < joc.GetComponent<cuttingManager>().copiiLamai.transform.childCount; i++)

@@ -11,7 +11,7 @@ public class cuttingManager : MonoBehaviour
     void Start()
     {
         mana = GameObject.FindGameObjectWithTag("tentaculL");
-        GameObject.FindGameObjectWithTag("tentaculL").SetActive(false);
+        mana.SetActive(false);
         copiiLamai = GameObject.FindWithTag("tataLamaie");
         for (int i=1; i<= GameObject.FindWithTag("tataLamaie").transform.childCount; i++)
         {
