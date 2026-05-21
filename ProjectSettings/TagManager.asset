@@ -21,6 +21,8 @@ TagManager:
   - BuyCups
   - BuyIce
   - ExitMark
+  - ScoateGheata
+  - CubG
   layers:
   - Default
   - TransparentFX
