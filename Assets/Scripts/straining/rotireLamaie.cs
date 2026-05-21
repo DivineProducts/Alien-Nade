@@ -11,7 +11,7 @@ public class rotireLamaie : MonoBehaviour
     private float lastAngle = 0f;
     private void Start()
     {
-        // Initialize starting angle
+        // de unde incep rotirile, ca sa nu trebuieasca sa resetam unghiul de fiecare data
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = mousePos - storcatoare.transform.position;
         lastAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -20,28 +20,19 @@ public class rotireLamaie : MonoBehaviour
     private void Update()
     {
         if (storcatoare.activeSelf )
-        {
-            // Mouse position
+        {  //astea rotesc
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos.z = 0f;
-
-            // Direction from storcatoare to mouse
             Vector2 direction = mousePos - storcatoare.transform.position;
-
-            // Angle
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-            // Rotate ONLY storcatoare
+            //astea tin cont de rotiri
+            // trebuie local ca daca nu se rotesc tot si toate....
             storcatoare.transform.localRotation = Quaternion.Euler(0f, 0f, angle);
-
-            // Rotation tracking
             float deltaAngle = Mathf.DeltaAngle(lastAngle, angle);
-
             totalRotation += Mathf.Abs(deltaAngle);
-
             lastAngle = angle;
 
-            // 4 full rotations
             if (totalRotation >= 2880f)
             {
                 capacitate += strainer.GetComponent<strainer>().cantitateSave;
@@ -53,7 +44,7 @@ public class rotireLamaie : MonoBehaviour
                 Debug.Log("8");
             }
         }
-        if (capacitate >= 100)
+        if (capacitate >= 300)
         {
             GameObject.Find("storcator").transform.GetComponent<umplutSauNu>().umplut = true;
             
