@@ -23,6 +23,7 @@ public class FromWaterToLemonade : MonoBehaviour
             
             if (scriptstorc1.umplut == true && cntjuice==0)
             {
+                other.gameObject.GetComponent<umplutSauNu>().capacitate = 0;
                 scriptstorc1.umplut = false;
                 cntjuice++;
             }
