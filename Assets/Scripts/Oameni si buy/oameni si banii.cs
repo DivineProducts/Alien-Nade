@@ -25,7 +25,7 @@ public class oamenisibanii : MonoBehaviour
     public Sprite nr3;
 
     private GameObject BaraLol;
-    public float priCre;
+    public float priCre= 1/3f;
 
     private bool SusJos = true;
 
@@ -86,15 +86,15 @@ public class oamenisibanii : MonoBehaviour
         Item2.SetActive(true);
         /* rndcateg = UnityEngine.Random.Range(0, 3);
          rndcatez = UnityEngine.Random.Range(0, 3);*/
-        rndesteZ = UnityEngine.Random.Range(0, 3);
-        rndesteG = UnityEngine.Random.Range(0, 3);
+        rndesteZ = UnityEngine.Random.Range(0, 4);
+        rndesteG = UnityEngine.Random.Range(0, 4);
 
         if (rndesteG == 0) { 
             rndcateg = 0; 
             Item3.SetActive(false);
         }
         else { 
-            rndcateg = UnityEngine.Random.Range(1, 4);
+            rndcateg = UnityEngine.Random.Range(1, 3);
             if (rndcateg == 1) { Numar3.gameObject.GetComponent<SpriteRenderer>().sprite = nr1; }
             if (rndcateg == 2) { Numar3.gameObject.GetComponent<SpriteRenderer>().sprite = nr2; }
             if (rndcateg == 3) { Numar3.gameObject.GetComponent<SpriteRenderer>().sprite = nr3; }
@@ -105,7 +105,7 @@ public class oamenisibanii : MonoBehaviour
             Item2.SetActive(false);
         }
         else { 
-            rndcatez = UnityEngine.Random.Range(1, 4);
+            rndcatez = UnityEngine.Random.Range(1, 3);
             if (rndcatez == 1) { Numar2.gameObject.GetComponent<SpriteRenderer>().sprite = nr1; }
             if (rndcatez == 2) { Numar2.gameObject.GetComponent<SpriteRenderer>().sprite = nr2; }
             if (rndcatez == 3) { Numar2.gameObject.GetComponent<SpriteRenderer>().sprite = nr3; }
