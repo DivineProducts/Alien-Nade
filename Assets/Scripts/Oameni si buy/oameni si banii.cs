@@ -124,8 +124,10 @@ public class oamenisibanii : MonoBehaviour
                 Destroy(other.gameObject);
                 ComandaInProcesare = false;
                 timerig = 60f;
-                bara.transform.localScale = new Vector3(bara.transform.localScale.x, bara.transform.localScale.y + priCre , bara.transform.localScale.z);
-            
+
+               /* bara.transform.localScale = new Vector3(bara.transform.localScale.x, bara.transform.localScale.y + priCre, bara.transform.localScale.z);*/
+
+                StartCoroutine(GrowBar(priCre, 0.5f));
             }
             else
             {
@@ -141,7 +143,25 @@ public class oamenisibanii : MonoBehaviour
 
     }
 
+    IEnumerator GrowBar(float amount, float duration)
+    {
+        Vector3 initial = bara.transform.localScale;
+        Vector3 targetScale = new Vector3(initial.x, initial.y + amount, initial.z);
+        Vector3 initialpoz = bara.transform.position;
+        Vector3 targetPos = initialpoz + new Vector3(0, amount*1.5f, 0);
+        float time = 0f;
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            bara.transform.localScale =Vector3.Lerp(initial, targetScale, time / duration);
+            bara.transform.position =Vector3.Lerp(initialpoz, targetPos, time / duration);
 
+            yield return null;
+        }
+
+        bara.transform.localScale = targetScale;
+        bara.transform.position = targetPos;
+    }
     public void Miscare()
     {
         if (this.gameObject.GetComponent<Transform>().localPosition.x <= 0f)

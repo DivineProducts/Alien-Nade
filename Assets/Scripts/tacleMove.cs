@@ -239,18 +239,22 @@ public class tacleMove : MonoBehaviour
             }
             if (other.gameObject.CompareTag("ScoatePahar"))
             {
-                grabbedPahar = other.gameObject;
+                if (other.gameObject.GetComponent<pahareControl>().pahareRamase > 0)
+                    grabbedPahar = other.gameObject;
             }
             if (other.gameObject.CompareTag("ScoateLamaie"))
             {
+                if (other.gameObject.GetComponent<lamaiControl>().lamaiRamase > 0)
                 grabbedLamaie = other.gameObject;
             }
             if (other.gameObject.CompareTag("ScoateZahar") && other.GetComponent<zaharControl>().zaharRamase !=0 )
             {
+                if (other.gameObject.GetComponent<zaharControl>().zaharRamase > 0)
                 grabbedZahar = other.gameObject;
             }
             if (other.gameObject.CompareTag("ScoateGheata"))
             {
+                if(other.gameObject.GetComponent<gheataControl>().gheataRamasa > 0)
                 grabbedGheata = other.gameObject;
             }
             if (other.gameObject.CompareTag("down"))
