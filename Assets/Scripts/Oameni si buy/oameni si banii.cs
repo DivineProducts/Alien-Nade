@@ -11,7 +11,6 @@ public class oamenisibanii : MonoBehaviour
     public GameObject Item3;
     public GameObject Numar2;
     public GameObject Numar3;
-    
 
     public Sprite om1;
     public Sprite om2;
@@ -24,8 +23,8 @@ public class oamenisibanii : MonoBehaviour
     public Sprite nr2;
     public Sprite nr3;
 
-    private GameObject BaraLol;
-    public float priCre= 1/3f;
+    public GameObject bara;
+    private float priCre= 1/3f;
 
     private bool SusJos = true;
 
@@ -50,7 +49,6 @@ public class oamenisibanii : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        BaraLol = GameObject.Find("Bara");
         RandomizareComanda();
         RandomizareOm();
     }
@@ -126,7 +124,8 @@ public class oamenisibanii : MonoBehaviour
                 Destroy(other.gameObject);
                 ComandaInProcesare = false;
                 timerig = 60f;
-                BaraLol.transform.localScale = new Vector3(BaraLol.transform.localScale.x, BaraLol.transform.localScale.y + priCre , BaraLol.transform.localScale.z);
+                bara.transform.localScale = new Vector3(bara.transform.localScale.x, bara.transform.localScale.y + priCre , bara.transform.localScale.z);
+            
             }
             else
             {
