@@ -1934,6 +1934,20 @@ MonoBehaviour:
   pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
+  gheata: {fileID: 0}
+  cutMiniGame: {fileID: 0}
+  phone: {fileID: 0}
+  Butoane: {fileID: 0}
+  Xmark: {fileID: 0}
+  Backb: {fileID: 0}
+  Marketb: {fileID: 0}
+  Settingsb: {fileID: 0}
+  Exitb: {fileID: 0}
+  BuyLemon: {fileID: 0}
+  BuySugar: {fileID: 0}
+  BuyCups: {fileID: 0}
+  BuyIce: {fileID: 0}
+  SXmark: {fileID: 0}
 --- !u!61 &4109487243140186626
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3078,6 +3092,7 @@ GameObject:
   - component: {fileID: 177471814442074535}
   - component: {fileID: 8123000351569408630}
   - component: {fileID: 8639980023528549548}
+  - component: {fileID: 4751586155551790053}
   m_Layer: 1
   m_Name: cuttingMinigame 1
   m_TagString: Untagged
@@ -3380,3 +3395,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 16.372463, y: 0.09440565}
   m_EdgeRadius: 0
+--- !u!210 &4751586155551790053
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025001380198091882}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
+  m_SortAtRoot: 0

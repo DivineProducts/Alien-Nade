@@ -17,7 +17,7 @@ public class butonExit : MonoBehaviour
                 Debug.LogWarning(i);
                 if (cutit.GetComponent<moveing>().v[i, 0] == 0)
                     break;
-                Transform child = joc.GetComponent<cuttingManager>().copiiLamai.transform.GetChild(1);
+                Transform child = joc.GetComponent<cuttingManager>().copiiLamai.transform.GetChild(i - 1);
                 Vector3 pos = child.position;
                 GameObject h1 = Instantiate(half1, pos, Quaternion.identity);
                 h1.GetComponent<cantitate>().ml = cutit.GetComponent<moveing>().v[i, 0] * 100;
