@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bbfae10517817354baa9b365c891986f
+guid: c61179929a91bcb4f85b9e91e089f8ee
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639149182883197583
+  platformSettingsDirtyTick: 639150627118510663
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Interface
+  - name: alienade
     originalName: 
-    pivot: {x: 0.58041954, y: -0.2406015}
+    pivot: {x: 0.4981183, y: -0.00974026}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 286
-      height: 133
-    spriteID: a9073689b3fadcc49bc640bbd450a357
+      width: 1860
+      height: 924
+    spriteID: 41b8ba83166d1f74db5602066e539b95
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,7 +145,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: Interface_0
+  - name: alienade_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -153,137 +153,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 5
+      x: 3
       y: 5
-      width: 61
-      height: 132
-    spriteID: 650a0553cefa1c443b32f5292fdbaf71
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Interface_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 105
-      y: 94
-      width: 12
-      height: 8
-    spriteID: 79cee5ea57ae5394882b3c5f9fbab312
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Interface_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 136
-      y: 92
-      width: 9
-      height: 9
-    spriteID: 95d5b4a8b7e8c1143a98744eb288ec50
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Interface_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 101
-      y: 68
-      width: 24
-      height: 14
-    spriteID: 755a1b0c1963ee9408beb08665e7bb6f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Interface_4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 102
-      y: 50
-      width: 17
-      height: 14
-    spriteID: 12ebfeb9b3efe6146b3f03250d84d9e5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Interface_5
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 102
-      y: 32
-      width: 16
-      height: 14
-    spriteID: fa3695198fdf4d1419da6fab1c0fc665
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Interface_6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 102
-      y: 14
-      width: 17
-      height: 14
-    spriteID: 08b4c26a3a09e47488e0066fffa7b39e
+      width: 1862
+      height: 921
+    spriteID: 181de819a8b8aff40a9931f1ea7f8da3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -294,21 +168,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 1737881765
-    name: Interface
+    guid: -1079373969
+    name: alienade
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Interface
+    - name: alienade
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 31
-        y: 32
-        width: 286
-        height: 133
-      spriteId: a9073689b3fadcc49bc640bbd450a357
+        x: 87
+        y: 9
+        width: 1860
+        height: 924
+      spriteId: 41b8ba83166d1f74db5602066e539b95
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -348,8 +222,32 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 394, y: 196}
-  previousTextureSize: {x: 512, y: 256}
+  canvasSize: {x: 2027, y: 937}
+  previousTextureSize: {x: 2048, y: 1024}
