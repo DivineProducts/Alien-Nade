@@ -177,8 +177,29 @@ ScriptedImporter:
       x: 32
       y: 4
       width: 12
-      height: 138
+      height: 124
     spriteID: 2b2cca6f259df624388b3c2fd43351b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: bar-Sheet_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 59
+      y: 4
+      width: 10
+      height: 122
+    spriteID: bc509db11d6a5fa43a80a2e3409ba236
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -201,7 +222,7 @@ ScriptedImporter:
       cellRect:
         x: 10
         y: 12
-        width: 40
+        width: 65
         height: 138
       spriteId: 4f07451ffdf1c2141867b5aae6ada553
     linkedCells: []
@@ -270,5 +291,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 61, y: 156}
-  previousTextureSize: {x: 64, y: 256}
+  canvasSize: {x: 81, y: 156}
+  previousTextureSize: {x: 128, y: 256}
