@@ -192,5 +192,6 @@ MonoBehaviour:
   CntZaharP: 0
   CntGheataP: 0
   ObiectAtins: {fileID: 0}
+  ObiectP: {fileID: 0}
   CuGheata: {fileID: 5912483656487108818, guid: 775852b51a34e884c9ad3256fa379435, type: 3}
-  CuLimon: {fileID: 0}
+  CuLimon: {fileID: 49220659116455033, guid: 775852b51a34e884c9ad3256fa379435, type: 3}
