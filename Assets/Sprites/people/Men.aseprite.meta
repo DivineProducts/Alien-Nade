@@ -156,7 +156,7 @@ ScriptedImporter:
       x: 4
       y: 6
       width: 150
-      height: 236
+      height: 230
     spriteID: 9d6aefae81d76cb4bb779b9b38b9e9e3
     spriteBone: []
     spriteOutline: []
@@ -174,8 +174,8 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 248
-      y: 7
+      x: 247
+      y: 2
       width: 150
       height: 235
     spriteID: 7b7eac9350d02634884a42915cfc1bef
@@ -198,7 +198,7 @@ ScriptedImporter:
       x: 503
       y: 4
       width: 152
-      height: 229
+      height: 223
     spriteID: 3d2c9cbfb8153734693547ac8afc3bc2
     spriteBone: []
     spriteOutline: []

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1704204855753923289}
   - component: {fileID: 3974846286785995589}
   - component: {fileID: 4848097358920359935}
+  - component: {fileID: 7622750876400290128}
   m_Layer: 0
   m_Name: gheata
   m_TagString: Grabbable
@@ -175,3 +176,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.13348725, y: 0.11109035}
   m_EdgeRadius: 0
+--- !u!114 &7622750876400290128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787941522198254568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d097e13739393847954055719329dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
