@@ -12,6 +12,8 @@ public class oamenisibanii : MonoBehaviour
     public GameObject Numar2;
     public GameObject Numar3;
 
+    public GameObject tutorial;
+
     public Sprite om1;
     public Sprite om2;
     public Sprite om3;
@@ -57,8 +59,10 @@ public class oamenisibanii : MonoBehaviour
     void Update()
     {
         /* this.gameObject.GetComponent<Transform>().localPosition += new Vector3(wawa * 1/5 * Time.deltaTime, 0, 0);
- */
-        Miscare();
+ */     if (tutorial.activeSelf == false)
+        {
+            Miscare();
+        }
         /*if (this.gameObject.GetComponent<Transform>().localPosition.x >= 13f)
         {
             this.gameObject.GetComponent<Transform>().localPosition -= new Vector3(2 * this.gameObject.GetComponent<Transform>().localPosition.x, 0, 0);
@@ -242,4 +246,8 @@ public class oamenisibanii : MonoBehaviour
 
     }
 
+    public void GataTut()
+    {
+        tutorial.SetActive(false);
+    }
 }
