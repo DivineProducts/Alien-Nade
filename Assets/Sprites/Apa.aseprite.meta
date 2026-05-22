@@ -147,8 +147,8 @@ ScriptedImporter:
   spriteSheetImportData:
   - name: Apa_0
     originalName: 
-    pivot: {x: 0.18607633, y: 0.4933523}
-    alignment: 9
+    pivot: {x: 0, y: 0.5}
+    alignment: 4
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
@@ -168,8 +168,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   - name: Apa_1
     originalName: 
-    pivot: {x: 0.24516805, y: 0.49667615}
-    alignment: 9
+    pivot: {x: 0, y: 0.5}
+    alignment: 4
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:

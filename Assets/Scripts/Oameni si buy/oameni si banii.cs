@@ -6,6 +6,7 @@ using Unity.Collections;
 public class oamenisibanii : MonoBehaviour
 {
     public GameObject comandalol;
+    public bool Item1=false;
     public GameObject Item2;
     public GameObject Item3;
     public GameObject Numar2;
@@ -77,6 +78,7 @@ public class oamenisibanii : MonoBehaviour
     }
     public void RandomizareComanda()
     {
+        Item1 = false;
         Item3.SetActive(true);
         Item2.SetActive(true);
         /* rndcateg = UnityEngine.Random.Range(0, 3);
@@ -114,7 +116,7 @@ public class oamenisibanii : MonoBehaviour
 
         if (other.gameObject.TryGetComponent<BehaviourOfPahare>(out BehaviourOfPahare scriptpahah))
         {
-            if (other.GetComponent<BehaviourOfPahare>().CntGheataP == rndcateg && other.GetComponent<BehaviourOfPahare>().CntZaharP == rndcatez)
+            if (other.GetComponent<BehaviourOfPahare>().CntGheataP == rndcateg && other.GetComponent<BehaviourOfPahare>().CntZaharP == rndcatez && Item1==true)
             {
                 Debug.Log("Comanada e buna");
                 RandomizareComanda();
