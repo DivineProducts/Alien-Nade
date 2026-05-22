@@ -24,6 +24,9 @@ public class oamenisibanii : MonoBehaviour
     public Sprite nr2;
     public Sprite nr3;
 
+    private GameObject BaraLol;
+    public float priCre;
+
     private bool SusJos = true;
 
     private bool ComandaInProcesare=false;
@@ -47,7 +50,7 @@ public class oamenisibanii : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        BaraLol = GameObject.Find("Bara");
         RandomizareComanda();
         RandomizareOm();
     }
@@ -83,8 +86,8 @@ public class oamenisibanii : MonoBehaviour
         Item2.SetActive(true);
         /* rndcateg = UnityEngine.Random.Range(0, 3);
          rndcatez = UnityEngine.Random.Range(0, 3);*/
-        rndesteZ = UnityEngine.Random.Range(0, 4);
-        rndesteG = UnityEngine.Random.Range(0, 4);
+        rndesteZ = UnityEngine.Random.Range(0, 3);
+        rndesteG = UnityEngine.Random.Range(0, 3);
 
         if (rndesteG == 0) { 
             rndcateg = 0; 
@@ -123,6 +126,7 @@ public class oamenisibanii : MonoBehaviour
                 Destroy(other.gameObject);
                 ComandaInProcesare = false;
                 timerig = 60f;
+                BaraLol.transform.localScale = new Vector3(BaraLol.transform.localScale.x, BaraLol.transform.localScale.y + priCre , BaraLol.transform.localScale.z);
             }
             else
             {

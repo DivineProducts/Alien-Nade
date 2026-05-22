@@ -17,12 +17,6 @@ public class BehaviourOfPahare : MonoBehaviour
         ObiectP = GameObject.Find("om");
     }
 
-  
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
 
