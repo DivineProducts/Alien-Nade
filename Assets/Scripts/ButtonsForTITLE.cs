@@ -6,16 +6,6 @@ using TMPro;
 public class ButtonsForTITLE : MonoBehaviour
 {
    public GameObject TextWok;
-    void Start()
-    {
-        
-    }
-
-   
-    void Update()
-    {
-        
-    }
    public  IEnumerator WaitAndLog()
     {
         yield return new WaitForSeconds(2f);
@@ -36,5 +26,9 @@ public class ButtonsForTITLE : MonoBehaviour
     public void StartJocBtn()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+    public void ContinueBtn()
+    {
+        SceneManager.LoadScene("TitleScreen");
     }
 }
