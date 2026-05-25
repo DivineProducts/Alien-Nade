@@ -205,11 +205,9 @@ public class tacleMoveR : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject == grabbedOb)
-        {
+        if (other.name != "base")
             if (!tine)
             {
-                grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
                 grabbedOb = null;
                 butonUp = null;
                 butonDown = null;
@@ -218,7 +216,6 @@ public class tacleMoveR : MonoBehaviour
                 grabbedZahar = null;
                 grabbedGheata = null;
             }
-        }
     }
 
     private void paharSpawn()

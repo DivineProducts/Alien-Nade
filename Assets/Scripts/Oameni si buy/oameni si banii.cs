@@ -26,7 +26,7 @@ public class oamenisibanii : MonoBehaviour
     public Sprite nr3;
 
     public GameObject bara;
-    private float priCre= 1/3f;
+    private float priCre= 1/2f;
 
     private bool SusJos = true;
 
@@ -62,6 +62,10 @@ public class oamenisibanii : MonoBehaviour
  */     if (tutorial.activeSelf == false)
         {
             Miscare();
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            StartCoroutine(GrowBar(priCre, 0.5f));
         }
         /*if (this.gameObject.GetComponent<Transform>().localPosition.x >= 13f)
         {
@@ -146,13 +150,14 @@ public class oamenisibanii : MonoBehaviour
         
 
     }
+    
 
     IEnumerator GrowBar(float amount, float duration)
     {
         Vector3 initial = bara.transform.localScale;
         Vector3 targetScale = new Vector3(initial.x, initial.y + amount, initial.z);
         Vector3 initialpoz = bara.transform.position;
-        Vector3 targetPos = initialpoz + new Vector3(0, amount*1.5f, 0);
+        Vector3 targetPos = initialpoz + new Vector3(0, amount*2.5f, 0);
         float time = 0f;
         while (time < duration)
         {

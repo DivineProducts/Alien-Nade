@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 7514118}
   - component: {fileID: 7514117}
   m_Layer: 0
-  m_Name: base (1)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 57678547}
   - component: {fileID: 57678546}
   m_Layer: 0
-  m_Name: base (8)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 112305940}
   - component: {fileID: 112305944}
   m_Layer: 0
-  m_Name: base (8)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 287559488}
   - component: {fileID: 287559492}
   m_Layer: 0
-  m_Name: base (2)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2178,7 +2178,7 @@ GameObject:
   - component: {fileID: 465857835}
   - component: {fileID: 465857839}
   m_Layer: 0
-  m_Name: base (1)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2783,7 +2783,7 @@ GameObject:
   - component: {fileID: 548349424}
   - component: {fileID: 548349423}
   m_Layer: 0
-  m_Name: base (6)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2976,7 +2976,7 @@ GameObject:
   - component: {fileID: 550524375}
   - component: {fileID: 550524374}
   m_Layer: 0
-  m_Name: base (11)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3169,7 +3169,7 @@ GameObject:
   - component: {fileID: 560362006}
   - component: {fileID: 560362010}
   m_Layer: 0
-  m_Name: base (6)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4028,8 +4028,9 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -11.254737, y: -2.9888325}
-  - {x: -11.155676, y: -11.503523}
-  - {x: 6.6765704, y: -11.576491}
+  - {x: -11.166122, y: -9.080861}
+  - {x: 6.5905943, y: -9.571947}
+  - {x: 6.642595, y: -9.33415}
   - {x: 6.7154226, y: -3.6382527}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -4074,8 +4075,8 @@ EdgeCollider2D:
   m_Points:
   - {x: 4.519326, y: 3.7591555}
   - {x: 6.6902704, y: 1.1145314}
-  - {x: 6.7100897, y: -11.707299}
-  - {x: -11.152905, y: -11.493315}
+  - {x: 6.5572033, y: -9.923618}
+  - {x: -11.237842, y: -9.064113}
   - {x: -11.25488, y: 0.9461634}
   - {x: -8.577509, y: 3.4601324}
   m_AdjacentStartPoint: {x: 0, y: 0}
@@ -4116,7 +4117,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.709754, y: 4.4753857}
+  m_Offset: {x: -2.709754, y: 4.295664}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4126,7 +4127,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.956015, y: 2.6430187}
+  m_Size: {x: 19.956015, y: 3.0024626}
   m_EdgeRadius: 0
 --- !u!4 &722005585
 Transform:
@@ -4622,7 +4623,7 @@ GameObject:
   - component: {fileID: 950004158}
   - component: {fileID: 950004157}
   m_Layer: 0
-  m_Name: base (2)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4915,7 +4916,7 @@ GameObject:
   - component: {fileID: 1039319537}
   - component: {fileID: 1039319541}
   m_Layer: 0
-  m_Name: base (7)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5195,7 +5196,7 @@ GameObject:
   - component: {fileID: 1070655720}
   - component: {fileID: 1070655719}
   m_Layer: 0
-  m_Name: base (7)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5585,7 +5586,7 @@ GameObject:
   - component: {fileID: 1369598517}
   - component: {fileID: 1369598521}
   m_Layer: 0
-  m_Name: base (5)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5941,7 +5942,7 @@ GameObject:
   - component: {fileID: 1387120184}
   - component: {fileID: 1387120183}
   m_Layer: 0
-  m_Name: base (10)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6309,7 +6310,7 @@ GameObject:
   - component: {fileID: 1500079166}
   - component: {fileID: 1500079165}
   m_Layer: 0
-  m_Name: base (4)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6502,7 +6503,7 @@ GameObject:
   - component: {fileID: 1512103460}
   - component: {fileID: 1512103464}
   m_Layer: 0
-  m_Name: base (4)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6695,7 +6696,7 @@ GameObject:
   - component: {fileID: 1514951483}
   - component: {fileID: 1514951482}
   m_Layer: 0
-  m_Name: base (5)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7035,7 +7036,7 @@ GameObject:
   - component: {fileID: 1563795509}
   - component: {fileID: 1563795513}
   m_Layer: 0
-  m_Name: base (9)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7228,7 +7229,7 @@ GameObject:
   - component: {fileID: 1631987766}
   - component: {fileID: 1631987765}
   m_Layer: 0
-  m_Name: base (3)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7594,7 +7595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c559af9d545935468057dd8b010a26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zaharRamase: 3
+  zaharRamase: 6
 --- !u!1 &1722369215
 GameObject:
   m_ObjectHideFlags: 0
@@ -7785,7 +7786,7 @@ GameObject:
   - component: {fileID: 1739551995}
   - component: {fileID: 1739551999}
   m_Layer: 0
-  m_Name: base (10)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8344,7 +8345,7 @@ GameObject:
   - component: {fileID: 1910409515}
   - component: {fileID: 1910409519}
   m_Layer: 0
-  m_Name: base (3)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8844,7 +8845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2117506781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8943,7 +8944,7 @@ GameObject:
   - component: {fileID: 2130752302}
   - component: {fileID: 2130752301}
   m_Layer: 0
-  m_Name: base (9)
+  m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

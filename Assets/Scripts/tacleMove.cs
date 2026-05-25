@@ -59,20 +59,6 @@ public class tacleMove : MonoBehaviour
                     Instantiate(cutMiniGame, new Vector3(-15.8900003f, -2.70000005f, -0.100787707f), Quaternion.identity);
                 grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
             }
-                grabbedOb = null;
-            if (grabbedPahar != null)
-                grabbedPahar = null;
-            if (butonUp != null)
-                butonUp = null;
-            if (butonDown != null)
-                butonDown = null;
-            if (grabbedLamaie != null)
-                grabbedLamaie = null;
-            if (grabbedZahar != null)
-                grabbedZahar = null;
-            if (grabbedGheata!= null)
-                grabbedGheata = null;
-
             if (tine)
             {
                 // da drumul
@@ -305,11 +291,9 @@ public class tacleMove : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject == grabbedOb)
-        {
+        if(other.name!="base")
             if (!tine)
             {
-                grabbedOb.GetComponent<BoxCollider2D>().isTrigger = false;
                 grabbedOb = null;
                 butonUp = null;
                 butonDown = null;
@@ -318,7 +302,6 @@ public class tacleMove : MonoBehaviour
                 grabbedZahar = null;
                 grabbedGheata = null;
             }
-        }
     }
 
     private void paharSpawn()
