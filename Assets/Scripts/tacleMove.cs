@@ -15,6 +15,8 @@ public class tacleMove : MonoBehaviour
     private GameObject grabbedOb;
     private GameObject grabbedPahar;
     private GameObject grabbedLamaie;
+    private GameObject grabbedKiwi;
+    private GameObject grabbedPorto;
     private GameObject grabbedZahar;
     private GameObject grabbedGheata;
     public bool tine = false;
@@ -26,6 +28,10 @@ public class tacleMove : MonoBehaviour
     public GameObject pahar;
     public GameObject lamaie;
     private GameObject lemon;
+    public GameObject portocala;
+    private GameObject orange;
+    public GameObject kiwiRomana;
+    private GameObject kiwi;
     public GameObject zahar;
     private GameObject sugar;
     public GameObject gheata;
@@ -103,6 +109,20 @@ public class tacleMove : MonoBehaviour
                 lamaieSpawn();
                 grabbedOb = lemon;
                 grabbedLamaie.GetComponent<lamaiControl>().schimbaSprite();
+            }
+            if (grabbedKiwi != null)
+            {
+                tine = true;
+                kiwiSpawn();
+                grabbedOb = kiwi;
+                grabbedKiwi.GetComponent<lamaiControl>().schimbaSprite();
+            }
+            if (grabbedPorto != null)
+            {
+                tine = true;
+                portocalaSpawn();
+                grabbedOb = orange;
+                grabbedPorto.GetComponent<lamaiControl>().schimbaSprite();
             }
             if (grabbedZahar != null)
             {
@@ -233,6 +253,16 @@ public class tacleMove : MonoBehaviour
                 if (other.gameObject.GetComponent<lamaiControl>().lamaiRamase > 0)
                 grabbedLamaie = other.gameObject;
             }
+            if (other.gameObject.CompareTag("ScoateKiwi"))
+            {
+                if (other.gameObject.GetComponent<lamaiControl>().lamaiRamase > 0)
+                    grabbedKiwi = other.gameObject;
+            }
+            if (other.gameObject.CompareTag("ScoatePorto"))
+            {
+                if (other.gameObject.GetComponent<lamaiControl>().lamaiRamase > 0)
+                    grabbedPorto = other.gameObject;
+            }
             if (other.gameObject.CompareTag("ScoateZahar") && other.GetComponent<zaharControl>().zaharRamase !=0 )
             {
                 if (other.gameObject.GetComponent<zaharControl>().zaharRamase > 0)
@@ -299,6 +329,8 @@ public class tacleMove : MonoBehaviour
                 butonDown = null;
                 grabbedPahar = null;
                 grabbedLamaie = null;
+                grabbedKiwi = null;
+                grabbedPorto = null;
                 grabbedZahar = null;
                 grabbedGheata = null;
             }
@@ -322,6 +354,16 @@ public class tacleMove : MonoBehaviour
     {
         lemon = Instantiate(lamaie, this.transform.position, Quaternion.identity);
         lemon.transform.SetParent(lamai.transform);
+    }
+    private void kiwiSpawn()
+    {
+        kiwi = Instantiate(kiwiRomana, this.transform.position, Quaternion.identity);
+        kiwi.transform.SetParent(lamai.transform);
+    }
+    private void portocalaSpawn()
+    {
+        orange = Instantiate(portocala, this.transform.position, Quaternion.identity);
+        orange.transform.SetParent(lamai.transform);
     }
     private void zaharSpawn()
     {
