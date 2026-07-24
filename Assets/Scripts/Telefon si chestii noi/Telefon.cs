@@ -35,6 +35,7 @@ public class Telefon : MonoBehaviour
         
     }
 
+    
     public void DeschideMarket()
     {
        SButoane.SetActive(false);

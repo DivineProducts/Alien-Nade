@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59986ef4acc098b41ae568b73079b21d
+guid: 7317045803885b64dac62b8f7fdbbdfa
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: IconSprite
+  - name: cheeseGrater
     originalName: 
-    pivot: {x: 0.5116279, y: -0.09615385}
+    pivot: {x: 1.5176471, y: -0.18852459}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 43
-      height: 52
-    spriteID: 7620f437d195f0548b241509dd473577
+      width: 85
+      height: 122
+    spriteID: d5be6b785cea14e46af9bf6547378007
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,21 +147,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1509065542
-    name: IconSprite
+    guid: 954030800
+    name: cheeseGrater
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: IconSprite
+    - name: cheeseGrater
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 10
-        y: 5
-        width: 43
-        height: 52
-      spriteId: 7620f437d195f0548b241509dd473577
+        x: 21
+        y: 23
+        width: 85
+        height: 122
+      spriteId: d5be6b785cea14e46af9bf6547378007
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -180,5 +180,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
-  previousTextureSize: {x: 64, y: 64}
+  canvasSize: {x: 300, y: 200}
+  previousTextureSize: {x: 128, y: 256}
