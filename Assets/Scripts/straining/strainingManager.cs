@@ -7,6 +7,8 @@ public class stors : MonoBehaviour
     public GameObject pozitieSpawn;
 
     public GameObject jumate;
+    public GameObject jumateKiwi;
+    public GameObject jumatePorto;
     private GameObject half;
     public int i;
     void Start()

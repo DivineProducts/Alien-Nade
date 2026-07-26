@@ -27,6 +27,8 @@ TagManager:
   - CubG
   - ScoatePorto
   - ScoateKiwi
+  - tataKiwi
+  - tataPortocala
   layers:
   - Default
   - TransparentFX

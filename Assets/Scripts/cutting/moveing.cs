@@ -5,6 +5,11 @@ public class moveing : MonoBehaviour
     public GameObject board;
     public float[,] v = new float[200, 2];
     public int nrlamai = 0;
+    public float[,] k = new float[200, 2];
+    public int nrkiwi = 0;
+    public float[,] p = new float[200, 2];
+    public int nrporto = 0;
+
     private float wawa=50f;
     void Start()
     {

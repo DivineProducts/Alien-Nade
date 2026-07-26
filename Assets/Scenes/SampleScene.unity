@@ -3526,6 +3526,8 @@ MonoBehaviour:
   straight: {fileID: -5440693265787819912, guid: 734bf7ceddd184846be6f03207508d26, type: 3}
   followSpeed: 15
   lamai: {fileID: 606348734}
+  kiwirom: {fileID: 1107951211}
+  portocale: {fileID: 1498493721}
   tine: 0
   pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
@@ -8258,6 +8260,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086961954}
   m_CullTransparentMesh: 1
+--- !u!1 &1107951211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107951212}
+  m_Layer: 0
+  m_Name: kiwirom
+  m_TagString: tataKiwi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1107951212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107951211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4416454, y: -3.060221, z: -0.089079656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1115290195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8452,7 +8485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!210 &1167167403
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -10726,6 +10759,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476528348}
   m_CullTransparentMesh: 1
+--- !u!1 &1498493721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498493722}
+  m_Layer: 0
+  m_Name: portocale
+  m_TagString: tataPortocala
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498493722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498493721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.4416454, y: -3.060221, z: -0.089079656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500079163
 GameObject:
   m_ObjectHideFlags: 0
@@ -19258,6 +19322,8 @@ SceneRoots:
   - {fileID: 689254690}
   - {fileID: 1074716798}
   - {fileID: 606348735}
+  - {fileID: 1107951212}
+  - {fileID: 1498493722}
   - {fileID: 872998154}
   - {fileID: 1472395170}
   - {fileID: 412667910}
