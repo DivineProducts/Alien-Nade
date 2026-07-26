@@ -1,5 +1,8 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Linq;
+using System.Collections;
 
 public class NewTelefonS : MonoBehaviour
 {
@@ -53,6 +56,31 @@ public class NewTelefonS : MonoBehaviour
     private int buycutitlv3 = 2;
     private int buycheese = 2;
     private int buyblender = 2;
+
+    public float Tdown = 10f;
+    private Coroutine NullifingFS = null;
+
+    private Coroutine limeTimerRef;
+    private Coroutine orangeTimerRef;
+    private Coroutine cupsTimerRef;
+    private Coroutine zahTimerRef;
+    private Coroutine kiwiTimerRef;
+    private Coroutine iceTimerRef;
+
+    
+    public TextMeshProUGUI TimIce;
+    public TextMeshProUGUI TimZah;
+    public TextMeshProUGUI TimCup;
+    public TextMeshProUGUI TimLim;
+    public TextMeshProUGUI TimOrg;
+    public TextMeshProUGUI TimKiw;
+
+
+
+   /* public void Start()
+    {
+        StartCoroutine(Timer(TimIce,15));
+    }*/
 
     public void QuitAlienade()
     {
@@ -260,52 +288,169 @@ public class NewTelefonS : MonoBehaviour
     {
         if (buylime == 0)
         {
-            Lemons.GetComponent<lamaiControl>().lamaiRamase = 10;
+            TimLim.gameObject.SetActive(true);
+            if (limeTimerRef == null)
+            {
+                limeTimerRef=
+                StartCoroutine(Timer(TimLim, 15f, () =>
+                {
+                    Lemons.GetComponent<lamaiControl>().lamaiRamase = 10;
+                    Lemons.GetComponent<lamaiControl>().schimbaSprite();
+                    Blime.SetActive(true);
+                    SLime.SetActive(false);
+                    buylime = 1;
+                    limeTimerRef = null;
+                    TimLim.gameObject.SetActive(false);
+                }));
+                
+            }
+
+
+            /*Lemons.GetComponent<lamaiControl>().lamaiRamase = 10;
             Lemons.GetComponent<lamaiControl>().schimbaSprite();
             Blime.SetActive(true);
             SLime.SetActive(false);
-            buylime = 1;
+            buylime = 1;*/
         }
         if (buyorange == 0)
         {
-            Orange.GetComponent<lamaiControl>().lamaiRamase = 10;
+            TimOrg.gameObject.SetActive(true);
+            if (orangeTimerRef == null)
+            {
+                orangeTimerRef =
+                StartCoroutine(Timer(TimOrg, 15f, () =>
+                {
+                    Orange.GetComponent<lamaiControl>().lamaiRamase = 10;
+                    Orange.GetComponent<lamaiControl>().schimbaSprite();
+                    BOrange.SetActive(true);
+                    SOrange.SetActive(false);
+                    buyorange = 1;
+                    orangeTimerRef = null;
+                    TimOrg.gameObject.SetActive(false);
+                }));
+
+            }
+            /*Orange.GetComponent<lamaiControl>().lamaiRamase = 10;
             Orange.GetComponent<lamaiControl>().schimbaSprite();
             BOrange.SetActive(true);
             SOrange.SetActive(false);
-            buyorange = 1;
+            buyorange = 1;*/
         }
         if (buykiwi == 0)
         {
-            Kiwi.GetComponent<lamaiControl>().lamaiRamase = 10;
+            TimKiw.gameObject.SetActive(true);
+            if (kiwiTimerRef == null)
+            {
+                kiwiTimerRef =
+                StartCoroutine(Timer(TimKiw, 15f, () =>
+                {
+                    Kiwi.GetComponent<lamaiControl>().lamaiRamase = 10;
+                    Kiwi.GetComponent<lamaiControl>().schimbaSprite();
+                    BKiwi.SetActive(true);
+                    SKiwi.SetActive(false);
+                    buykiwi = 1;
+                    kiwiTimerRef = null;
+                    TimKiw.gameObject.SetActive(false);
+                }));
+
+            }
+            /*Kiwi.GetComponent<lamaiControl>().lamaiRamase = 10;
             Kiwi.GetComponent<lamaiControl>().schimbaSprite();
             BKiwi.SetActive(true);
             SKiwi.SetActive(false);
-            buykiwi = 1;
+            buykiwi = 1;*/
         }
         if (buycups == 0)
         {
-            PahareStac.GetComponent<pahareControl>().pahareRamase = 7;
+            TimCup.gameObject.SetActive(true);
+            if (cupsTimerRef == null)
+            {
+                cupsTimerRef =
+                StartCoroutine(Timer(TimCup, 15f, () =>
+                {
+                    PahareStac.GetComponent<pahareControl>().pahareRamase = 7;
+                    PahareStac.GetComponent<pahareControl>().schimbaSprite();
+                    BCup.SetActive(true);
+                    SCup.SetActive(false);
+                    buycups = 1;
+                    cupsTimerRef = null;
+                    TimCup.gameObject.SetActive(false);
+                }));
+
+            }
+            /*PahareStac.GetComponent<pahareControl>().pahareRamase = 7;
             PahareStac.GetComponent<pahareControl>().schimbaSprite();
             BCup.SetActive(true);
             SCup.SetActive(false);
-            buycups = 1;
+            buycups = 1;*/
         }
         if (buysugar == 0)
         {
-            Sugah.GetComponent<zaharControl>().zaharRamase = 6;
+            TimZah.gameObject.SetActive(true);
+            if (zahTimerRef == null)
+            {
+                zahTimerRef =
+                StartCoroutine(Timer(TimZah, 15f, () =>
+                {
+                    Sugah.GetComponent<zaharControl>().zaharRamase = 6;
+                    BSugar.SetActive(true);
+                    SSugar.SetActive(false);
+                    buysugar = 1;
+                    zahTimerRef = null;
+                    TimZah.gameObject.SetActive(false);
+                }));
+
+            }
+           /* Sugah.GetComponent<zaharControl>().zaharRamase = 6;
             BSugar.SetActive(true);
             SSugar.SetActive(false);
-            buysugar = 1;
+            buysugar = 1;*/
         }
         if (buyice==0)
         {
-            Ice.GetComponent<gheataControl>().gheataRamasa = 7;
+            TimIce.gameObject.SetActive(true);
+            if (iceTimerRef == null)
+            {
+                iceTimerRef =
+                StartCoroutine(Timer(TimIce, 15f, () =>
+                {
+                    Ice.GetComponent<gheataControl>().gheataRamasa = 7;
+                    Ice.GetComponent<gheataControl>().schimbaSprite();
+                    BIce.SetActive(true);
+                    SIce.SetActive(false);
+                    buyice = 1;
+                    iceTimerRef = null;
+                    TimIce.gameObject.SetActive(false);
+                }));
+
+            }
+           /* Ice.GetComponent<gheataControl>().gheataRamasa = 7;
             Ice.GetComponent<gheataControl>().schimbaSprite();
             BIce.SetActive(true);
             SIce.SetActive(false);
-            buyice = 1;
+            buyice = 1;*/
         }
         
     }
 
+
+    public IEnumerator Timer(TextMeshProUGUI Timp,float Tdown, System.Action onComplete)
+    {
+
+        float Ctime = Tdown;
+        while (Ctime > 0)
+        {
+
+            Timp.text = Ctime.ToString();
+            yield return new WaitForSeconds(1f);
+            Ctime -= 1f;
+
+        }
+        Timp.text = "0";
+        if (onComplete != null)
+        {
+            onComplete.Invoke();
+        }
+
+    }
 }
