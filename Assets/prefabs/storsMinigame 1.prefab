@@ -3081,6 +3081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   board: {fileID: 733818007037412522}
   nrlamai: 0
+  nrkiwi: 0
+  nrporto: 0
 --- !u!1 &7797210286984886877
 GameObject:
   m_ObjectHideFlags: 0
@@ -3412,4 +3414,6 @@ MonoBehaviour:
   copiiJumatati: {fileID: 0}
   pozitieSpawn: {fileID: 4914496084077288164}
   jumate: {fileID: 6760248926738080499, guid: 8e7c28bda9241f04e92f7e5c2aeb8315, type: 3}
+  jumateKiwi: {fileID: 6253875506847377196, guid: 4b7fd2d8dda86514a8ca288bbf5810eb, type: 3}
+  jumatePorto: {fileID: 5893907754376281530, guid: 4432349d55325d049a872900dfc01e24, type: 3}
   i: 1
