@@ -3421,11 +3421,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joc: {fileID: 2610813249784926349}
-  cuttingBoard: {fileID: 8742038119076379808}
   cutit: {fileID: 8742038119076379808}
   half1: {fileID: 2746140851038047189, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
   half2: {fileID: 4975343308230171265, guid: 6f283315cbb0102479c6f63f01c93a2c, type: 3}
   halfKiwi1: {fileID: 1738730930888857655, guid: f13ed0c24711df1418d6d1c320b05506, type: 3}
   halfKiwi2: {fileID: 7770248865648668873, guid: 42082aa4f1d0b0849883545a93e21ace, type: 3}
-  halfPorto11: {fileID: 5893907754376281530, guid: 4432349d55325d049a872900dfc01e24, type: 3}
+  halfPorto11: {fileID: 1378849477804781545, guid: 108408fb159922c498948b56b3d2cffc, type: 3}
   halfPorto12: {fileID: 375701411793920648, guid: c68e720b502eeea4db948df09f225bd7, type: 3}
