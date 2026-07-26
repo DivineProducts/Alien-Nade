@@ -3,6 +3,7 @@ using UnityEngine;
 public class lamaiControl : MonoBehaviour
 {
     public int lamaiRamase;
+
     public Sprite jumate;
     public Sprite gol;
     public Sprite plin;

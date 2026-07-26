@@ -268,11 +268,19 @@ public class NewTelefonS : MonoBehaviour
         }
         if (buyorange == 0)
         {
-
+            Orange.GetComponent<lamaiControl>().lamaiRamase = 10;
+            Orange.GetComponent<lamaiControl>().schimbaSprite();
+            BOrange.SetActive(true);
+            SOrange.SetActive(false);
+            buyorange = 1;
         }
         if (buykiwi == 0)
         {
-
+            Kiwi.GetComponent<lamaiControl>().lamaiRamase = 10;
+            Kiwi.GetComponent<lamaiControl>().schimbaSprite();
+            BKiwi.SetActive(true);
+            SKiwi.SetActive(false);
+            buykiwi = 1;
         }
         if (buycups == 0)
         {

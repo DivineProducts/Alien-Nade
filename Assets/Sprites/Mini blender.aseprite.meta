@@ -154,7 +154,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 99
       width: 59
       height: 36
     spriteID: c89078ed1b6d5284b872a179dc738e91
@@ -175,10 +175,52 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 87
-      y: 4
+      y: 99
       width: 59
       height: 36
     spriteID: 058fed3b1e242f444a4153b9fd4fd184
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Mini blender_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 51
+      width: 59
+      height: 36
+    spriteID: 4e9fbc0e4c1af224c8643990c8964bd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Mini blender_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 4
+      width: 59
+      height: 36
+    spriteID: b1354e2dc40a8784ab35423c45f049bb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,9 +242,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 3
-        y: 12
+        y: 21
         width: 228
-        height: 36
+        height: 131
       spriteId: 9f1fb246b5ec3314999a3e58f342daac
     linkedCells: []
     parentIndex: -1
@@ -270,5 +312,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 244, y: 78}
-  previousTextureSize: {x: 256, y: 64}
+  canvasSize: {x: 244, y: 182}
+  previousTextureSize: {x: 256, y: 256}

@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2887154
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1855,7 +1855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &279713224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5506,6 +5506,11 @@ MonoBehaviour:
   Apa: {fileID: -3085368391030466958, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
   Lemonade: {fileID: 6786761733403483403, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
   cntjuice: 0
+--- !u!1 &680630872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2813460976008231370, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+  m_PrefabInstance: {fileID: 788231592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &689254687
 GameObject:
   m_ObjectHideFlags: 0
@@ -6235,6 +6240,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1074716798}
     m_Modifications:
+    - target: {fileID: 1959781555862609943, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+      propertyPath: kiwiRamase
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959781555862609943, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+      propertyPath: orangeRamase
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2813460976008231370, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
       propertyPath: m_Name
       value: LadaPort
@@ -6556,8 +6569,8 @@ MonoBehaviour:
   TMarketpg2: {fileID: 724807555}
   PahareStac: {fileID: 442294769}
   Lemons: {fileID: 720791693}
-  Orange: {fileID: 0}
-  Kiwi: {fileID: 0}
+  Orange: {fileID: 680630872}
+  Kiwi: {fileID: 1319806976}
   Sugah: {fileID: 1710449251}
   Ice: {fileID: 922261262}
   Blime: {fileID: 1923695882}
@@ -9772,6 +9785,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319562495}
   m_CullTransparentMesh: 1
+--- !u!1 &1319806976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2685365470121874445, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
+  m_PrefabInstance: {fileID: 1981496004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350349991
 GameObject:
   m_ObjectHideFlags: 0

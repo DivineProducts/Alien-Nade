@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79952b8aced6b2d48ab43cd4bdd962fa
+guid: e6ddab2beaa5f0a4c880b0e2fa77417f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639148268928676297
+  platformSettingsDirtyTick: 639206797203041115
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Apa
+  - name: cupnew
     originalName: 
-    pivot: {x: 0.4830247, y: -0.116279066}
+    pivot: {x: 0.4828326, y: -0.0656168}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 324
-      height: 86
-    spriteID: 5e305e6ea182490449185a550380917a
+      width: 233
+      height: 381
+    spriteID: 78a76813dc54f3f42a9c4aadc0cdad4a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,91 +145,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: Apa_0
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 177
-      y: 7
-      width: 63
-      height: 70
-    spriteID: 39925b7fa465a094aa1b8e31725335d0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Apa_1
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 264
-      y: 7
-      width: 63
-      height: 70
-    spriteID: 985f3e26f2a10b843b3b8747b7444c29
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Apa_2
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 345
-      y: 6
-      width: 63
-      height: 70
-    spriteID: 5b0f084d4fe72ea46b237a3149d97f8b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Apa_3
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 429
-      y: 5
-      width: 63
-      height: 70
-    spriteID: eb0940176e3d67c49ab78e0006029a38
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Apa_4
+  - name: cupnew_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -237,11 +153,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 505
-      y: 4
-      width: 63
-      height: 70
-    spriteID: 8269c8c51ad630a4e92ffd6886f7b4c3
+      x: 54
+      y: 327
+      width: 52
+      height: 56
+    spriteID: ed72b27daccf5b4419d96ebb7c406e7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -250,7 +166,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Apa_5
+  - name: cupnew_1
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -258,11 +174,179 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 585
-      y: 4
-      width: 63
-      height: 70
-    spriteID: bf3082ae270d79e4ab0ad986ce67bebe
+      x: 129
+      y: 327
+      width: 52
+      height: 57
+    spriteID: b3e8f03cbb296a14e8742927b93a9123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 262
+      width: 52
+      height: 57
+    spriteID: 3d7f5c5963555634ba17889a953b2957
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 265
+      width: 52
+      height: 57
+    spriteID: e2dbc81b02a499e4481ae459b8fa6475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 199
+      width: 50
+      height: 55
+    spriteID: ed0914ddd02147a4ba806c23bbee154c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 202
+      width: 50
+      height: 57
+    spriteID: 092edd0f80aafca42a8e46d025b84334
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 58
+      y: 135
+      width: 51
+      height: 54
+    spriteID: 0f1700ac44a6f2045a8c2a2bec722a7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 136
+      width: 53
+      height: 58
+    spriteID: a61e649da02390a449290cccdaf7f87d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 58
+      y: 70
+      width: 53
+      height: 54
+    spriteID: 4440c7870e3fa2e40b346770d08b7adb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: cupnew_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 134
+      y: 70
+      width: 56
+      height: 57
+    spriteID: d42be3a8daa99f6489dea5643f5dd349
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -273,21 +357,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 1549653518
-    name: Apa
+    guid: -855845024
+    name: cupnew
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Apa
+    - name: cupnew
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 23
-        y: 7
-        width: 644
-        height: 89
-      spriteId: 5e305e6ea182490449185a550380917a
+        x: 8
+        y: 25
+        width: 234
+        height: 381
+      spriteId: 78a76813dc54f3f42a9c4aadc0cdad4a
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -327,32 +411,8 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: WebGL
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 16384
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  generatePhysicsShape: 0
+  generatePhysicsShape: 1
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 679, y: 100}
-  previousTextureSize: {x: 1024, y: 128}
+  canvasSize: {x: 243, y: 409}
+  previousTextureSize: {x: 256, y: 512}
