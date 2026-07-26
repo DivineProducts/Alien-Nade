@@ -12,8 +12,6 @@ public class butonExit : MonoBehaviour
     public GameObject halfPorto12;
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-
         if (other.gameObject.name == "base")
         {
             for (int i = 1; i <= cutit.GetComponent<moveing>().nrlamai && i <= joc.GetComponent<cuttingManager>().copiiLamai.transform.childCount; i++)
