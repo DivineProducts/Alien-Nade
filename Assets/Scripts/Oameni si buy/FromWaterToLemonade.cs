@@ -4,6 +4,10 @@ public class FromWaterToLemonade : MonoBehaviour
 {
     public Sprite Apa;
     public Sprite Lemonade;
+    public Sprite Kiwinade;
+    public Sprite Portonade;
+    public Sprite LamiPort;
+    public Sprite LamiKiwi;
     public int cntjuice;
     void Update()
     {
@@ -21,11 +25,13 @@ public class FromWaterToLemonade : MonoBehaviour
     {if (other.gameObject.TryGetComponent<umplutSauNu>(out umplutSauNu scriptstorc1))
         {
             
-            if (scriptstorc1.umplut == true && cntjuice==0)
+            if (scriptstorc1.umplut == true)
             {
-                other.gameObject.GetComponent<umplutSauNu>().capacitate = 0;
-                scriptstorc1.umplut = false;
-                cntjuice++;
+                other.gameObject.GetComponent<umplutSauNu>().Goleste();
+                /*scriptstorc1.umplut = false;*/
+                if(other.GetComponent<SpriteRenderer>().sprite.name==other.GetComponent<umplutSauNu>().sucLamaie.name)
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = Lemonade;
+                /*cntjuice++;*/
             }
             
         }

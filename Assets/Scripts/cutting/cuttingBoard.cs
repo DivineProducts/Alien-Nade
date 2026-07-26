@@ -45,7 +45,6 @@ public class cuttingBoard : MonoBehaviour
         if (other.name == "OrangeFx(Clone)")
         {
             ptaiate++;
-
             mana.SetActive(false);
             cutit.SetActive(true);
             cuttingLemon.SetActive(true);

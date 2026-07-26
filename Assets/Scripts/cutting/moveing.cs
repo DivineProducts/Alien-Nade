@@ -32,11 +32,32 @@ public class moveing : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            nrlamai++;
-            /*v[nrlamai, 1] = (13 - wawa) * 100;
-            v[nrlamai, 0] = (wawa - 10) * 100;*/
-            v[nrlamai, 0] = Mathf.Round((transform.localPosition.x - 10f) * 100f) / 100f;
-            v[nrlamai, 1] = Mathf.Round((13f - transform.localPosition.x) * 100f) / 100f;
+            float left = Mathf.Round(
+                   (transform.localPosition.x - 10f) * 100f) / 100f;
+            float right = Mathf.Round(
+                (13f - transform.localPosition.x) * 100f) / 100f;
+
+            if (board.GetComponent<cuttingBoard>().numeFructActual == "LemonFx(Clone)")
+            {
+                nrlamai++;
+
+                v[nrlamai, 0] = left;
+                v[nrlamai, 1] = right;
+            }
+            else if (board.GetComponent<cuttingBoard>().numeFructActual == "KiwiFx(Clone)")
+            {
+                nrkiwi++;
+
+                k[nrkiwi, 0] = left;
+                k[nrkiwi, 1] = right;
+            }
+            else if (board.GetComponent<cuttingBoard>().numeFructActual == "OrangeFx(Clone)")
+            {
+                nrporto++;
+
+                p[nrporto, 0] = left;
+                p[nrporto, 1] = right;
+            }
             Debug.Log(v[nrlamai, 0]);
             board.GetComponent<cuttingBoard>().mana.SetActive(true);
             board.GetComponent<cuttingBoard>().cutit.SetActive(false);
