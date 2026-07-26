@@ -6,6 +6,10 @@ public class butonExit : MonoBehaviour
     public GameObject cutit;
     public GameObject half1;
     public GameObject half2;
+    public GameObject halfKiwi1;
+    public GameObject halfKiwi2;
+    public GameObject halfPorto11;
+    public GameObject halfPorto12;
     private void OnTriggerEnter2D(Collider2D other)
     {
 

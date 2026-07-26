@@ -171,7 +171,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.029542312, y: -0.16611934}
-  m_ConnectedAnchor: {x: -0.029542208, y: 0.08188046}
+  m_ConnectedAnchor: {x: -0.029542303, y: 0.081880756}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -672,7 +672,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.029542312, y: -0.16611934}
-  m_ConnectedAnchor: {x: -0.029542433, y: 0.08688081}
+  m_ConnectedAnchor: {x: -0.029542277, y: 0.08688073}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -883,7 +883,7 @@ Transform:
   m_GameObject: {fileID: 2610813249784926349}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.59, y: -2.5439286, z: -0.10078771}
+  m_LocalPosition: {x: -15.275252, y: -2.0026379, z: -0.10078771}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1123,6 +1123,8 @@ MonoBehaviour:
   copiiLamai: {fileID: 0}
   pozitieSpawn: {fileID: 990990911310121038}
   lamaie: {fileID: 4351603169769445703, guid: 1e813506f1ef6f749aa83ee5bfab61bb, type: 3}
+  kiwiRom: {fileID: 1103594588919747815, guid: 3ca609e432d68de48bb68a885eea006e, type: 3}
+  portocala: {fileID: 6459056788606261759, guid: 48cc6e30f4b42334d9705720ff45c7cb, type: 3}
 --- !u!61 &641662841729026076
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1352,7 +1354,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.029542312, y: -0.16611934}
-  m_ConnectedAnchor: {x: -0.02784223, y: 0.045880668}
+  m_ConnectedAnchor: {x: -0.027842384, y: 0.045880754}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -1450,7 +1452,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -13.276433, y: -6.52627}
+  m_ConnectedAnchor: {x: -12.961685, y: -5.9849796}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -2017,7 +2019,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.029542312, y: -0.16611934}
-  m_ConnectedAnchor: {x: -0.02954241, y: 0.09188078}
+  m_ConnectedAnchor: {x: -0.029542333, y: 0.09188073}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -2423,6 +2425,9 @@ MonoBehaviour:
   mana: {fileID: 2569923743601086299}
   cutit: {fileID: 8742038119076379808}
   cuttingLemon: {fileID: 2607943233425571837}
+  KiwiS: {fileID: -5628704047471052630, guid: 2123315c8b65ccd428d3fc3d2e3074b9, type: 3}
+  LemonS: {fileID: 5707645513719059116, guid: 2123315c8b65ccd428d3fc3d2e3074b9, type: 3}
+  OrangeS: {fileID: 8627911708012068041, guid: 2123315c8b65ccd428d3fc3d2e3074b9, type: 3}
 --- !u!1 &7501061507458814993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,7 +2599,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.029542312, y: -0.16611934}
-  m_ConnectedAnchor: {x: -0.02954231, y: 0.09388106}
+  m_ConnectedAnchor: {x: -0.029542375, y: 0.09388085}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
@@ -3080,7 +3085,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.029542312, y: -0.16611934}
-  m_ConnectedAnchor: {x: -0.029542247, y: 0.10188049}
+  m_ConnectedAnchor: {x: -0.02954221, y: 0.10188046}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:
