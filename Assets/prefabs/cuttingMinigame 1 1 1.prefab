@@ -404,6 +404,8 @@ MonoBehaviour:
   straight: {fileID: -5440693265787819912, guid: 734bf7ceddd184846be6f03207508d26, type: 3}
   followSpeed: 15
   lamai: {fileID: 0}
+  kiwirom: {fileID: 0}
+  portocale: {fileID: 0}
   tine: 0
   pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
@@ -1121,6 +1123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mana: {fileID: 0}
   copiiLamai: {fileID: 0}
+  copiiKiwi: {fileID: 0}
+  copiiPortocale: {fileID: 0}
   pozitieSpawn: {fileID: 990990911310121038}
   lamaie: {fileID: 4351603169769445703, guid: 1e813506f1ef6f749aa83ee5bfab61bb, type: 3}
   kiwiRom: {fileID: 1103594588919747815, guid: 3ca609e432d68de48bb68a885eea006e, type: 3}
@@ -2425,9 +2429,13 @@ MonoBehaviour:
   mana: {fileID: 2569923743601086299}
   cutit: {fileID: 8742038119076379808}
   cuttingLemon: {fileID: 2607943233425571837}
+  ltaiate: 0
+  ptaiate: 0
+  ktaiate: 0
   KiwiS: {fileID: -5628704047471052630, guid: 2123315c8b65ccd428d3fc3d2e3074b9, type: 3}
   LemonS: {fileID: 5707645513719059116, guid: 2123315c8b65ccd428d3fc3d2e3074b9, type: 3}
   OrangeS: {fileID: 8627911708012068041, guid: 2123315c8b65ccd428d3fc3d2e3074b9, type: 3}
+  numeFructActual: 
 --- !u!1 &7501061507458814993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,7 +2656,7 @@ Transform:
   m_GameObject: {fileID: 7605251214625377048}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.93, y: 1.29, z: 0}
+  m_LocalPosition: {x: 10.93, y: 1.39, z: 0}
   m_LocalScale: {x: 4.095141, y: 4.6873507, z: 4.7286534}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3222,6 +3230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   board: {fileID: 7355443877200988386}
   nrlamai: 0
+  nrkiwi: 0
+  nrporto: 0
 --- !u!1 &9190679128351063420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3421,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joc: {fileID: 2610813249784926349}
+  cuttingBoard: {fileID: 8742038119076379808}
   cutit: {fileID: 8742038119076379808}
   half1: {fileID: 2746140851038047189, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
   half2: {fileID: 4975343308230171265, guid: 6f283315cbb0102479c6f63f01c93a2c, type: 3}
+  halfKiwi1: {fileID: 1738730930888857655, guid: f13ed0c24711df1418d6d1c320b05506, type: 3}
+  halfKiwi2: {fileID: 7770248865648668873, guid: 42082aa4f1d0b0849883545a93e21ace, type: 3}
+  halfPorto11: {fileID: 5893907754376281530, guid: 4432349d55325d049a872900dfc01e24, type: 3}
+  halfPorto12: {fileID: 375701411793920648, guid: c68e720b502eeea4db948df09f225bd7, type: 3}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4053317468776531439}
   - component: {fileID: 1789882781593427050}
   m_Layer: 1
-  m_Name: OrgTaiatLFx
+  m_Name: KiwiTaiatLFx
   m_TagString: Grabbable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

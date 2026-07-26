@@ -4,6 +4,8 @@ public class cuttingManager : MonoBehaviour
 {
     public GameObject mana;
     public GameObject copiiLamai;
+    public GameObject copiiKiwi;
+    public GameObject copiiPortocale;
     public GameObject pozitieSpawn;
 
     public GameObject lamaie;
@@ -18,25 +20,35 @@ public class cuttingManager : MonoBehaviour
         mana = GameObject.FindGameObjectWithTag("tentaculL");
         mana.SetActive(false);
         copiiLamai = GameObject.FindWithTag("tataLamaie");
+        copiiKiwi = GameObject.FindWithTag("tataKiwi");
+        copiiPortocale = GameObject.FindWithTag("tataPortocala");
         for (int i=1; i<= GameObject.FindWithTag("tataLamaie").transform.childCount; i++)
-        {if(GameObject.FindWithTag("tataLamaie").transform.GetChild(i - 1).name == "Lemon(Clone)")
+            lamaieSpawn();
+        for (int i = 1; i <= GameObject.FindWithTag("tataKiwi").transform.childCount; i++)
+            kiwiRomSpawn();
+        for (int i = 1; i <= GameObject.FindWithTag("tataPortocala").transform.childCount; i++)
+            portocalaSpawn();
+        /*{if(GameObject.FindWithTag("tataLamaie").transform.GetChild(i - 1).name == "Lemon(Clone)")
             lamaieSpawn();
             if (GameObject.FindWithTag("tataLamaie").transform.GetChild(i - 1).name == "Kiwi(Clone)")
                 kiwiRomSpawn();
             if (GameObject.FindWithTag("tataLamaie").transform.GetChild(i - 1).name == "Orange(Clone)")
                 portocalaSpawn();
-        }
+        }*/
     }
     private void lamaieSpawn()
     {
         lemon = Instantiate(lamaie, pozitieSpawn.transform.position, Quaternion.identity);
+        lemon.transform.SetParent(this.gameObject.transform);
     }
     private void kiwiRomSpawn()
     {
         kiwi = Instantiate(kiwiRom, pozitieSpawn.transform.position, Quaternion.identity);
+        kiwi.transform.SetParent(this.gameObject.transform);
     }
     private void portocalaSpawn()
     {
         orange = Instantiate(portocala, pozitieSpawn.transform.position, Quaternion.identity);
+        orange.transform.SetParent(this.gameObject.transform);
     }
 }

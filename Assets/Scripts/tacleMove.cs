@@ -10,6 +10,8 @@ public class tacleMove : MonoBehaviour
     private bool urmareste = false;
     private bool stop = false;
     public GameObject lamai;
+    public GameObject kiwirom;
+    public GameObject portocale;
 
     //grabbing stuff
     private GameObject grabbedOb;
@@ -358,12 +360,12 @@ public class tacleMove : MonoBehaviour
     private void kiwiSpawn()
     {
         kiwi = Instantiate(kiwiRomana, this.transform.position, Quaternion.identity);
-        kiwi.transform.SetParent(lamai.transform);
+        kiwi.transform.SetParent(kiwirom.transform);
     }
     private void portocalaSpawn()
     {
         orange = Instantiate(portocala, this.transform.position, Quaternion.identity);
-        orange.transform.SetParent(lamai.transform);
+        orange.transform.SetParent(portocale.transform);
     }
     private void zaharSpawn()
     {
