@@ -74,4 +74,7 @@ public class Telefon : MonoBehaviour
         Sphone.gameObject.GetComponent<SpriteRenderer>().sprite = FaceNormal;
         ALLMArkB.SetActive(false);
     }
+
+
+
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: de90c492b93671147b7d1fe5c08957a2
+guid: a097aefec9ea43e47b3d941d85bddb21
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639203595145374049
+  platformSettingsDirtyTick: 639206637300853432
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: NewPhone
+  - name: PahareSunet 1
     originalName: 
-    pivot: {x: 0.49179107, y: 0}
+    pivot: {x: 0.56325305, y: -0.2672414}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 1340
-      height: 177
-    spriteID: bbb584c74f5492042ae64ca97c8fa088
+      width: 332
+      height: 116
+    spriteID: 0ee26757dcab3844080a549d32a38558
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -145,7 +145,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: NewPhone_0
+  - name: PahareSunet 1_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -153,11 +153,137 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
+      x: 12
+      y: 68
+      width: 43
+      height: 52
+    spriteID: 29792420e601a454381adf7dc87644ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 63
+      y: 68
+      width: 43
+      height: 52
+    spriteID: 7283a10197fe8924b9efffc629102246
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 68
+      width: 43
+      height: 52
+    spriteID: cd096eb83f89a8347915770f772896fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 68
+      width: 43
+      height: 52
+    spriteID: 69669fd9c8569d648b334fde7741dd29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 238
+      y: 68
+      width: 43
+      height: 52
+    spriteID: 213412c558e2557449b21a23c72c5fc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 71
+      width: 18
+      height: 36
+    spriteID: d78ba9407d089374093e90ec2e01ff5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 63
       y: 4
-      width: 278
-      height: 177
-    spriteID: 77bc28d712f752c4fa7f519fe06990ff
+      width: 43
+      height: 52
+    spriteID: a40d00d20b7c14844abcc74929ad6ad5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -166,7 +292,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: NewPhone_1
+  - name: PahareSunet 1_7
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -174,11 +300,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 354
+      x: 123
       y: 4
-      width: 278
-      height: 177
-    spriteID: c9b377ce61ead6a41a39a2ea20c498db
+      width: 43
+      height: 52
+    spriteID: 90ed6a0a4d88f1a4d801e534a59eef2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -187,7 +313,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: NewPhone_2
+  - name: PahareSunet 1_8
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -195,11 +321,11 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 704
+      x: 183
       y: 4
-      width: 278
-      height: 177
-    spriteID: 82aa6e3b7a7bc1240b790d0da1f131e2
+      width: 43
+      height: 52
+    spriteID: 06036b3871ce6454494a67904480ddfe
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -208,7 +334,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: NewPhone_3
+  - name: PahareSunet 1_9
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -216,137 +342,53 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 311
-      y: 158
-      width: 17
-      height: 14
-    spriteID: 23d56db374fffba4bbf5588ef657882d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: NewPhone_4
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 311
-      y: 126
-      width: 17
-      height: 14
-    spriteID: 61f5babe0ee80c54ab9e0673381d9874
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: NewPhone_5
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 1420
-      y: 129
-      width: 38
-      height: 19
-    spriteID: 3b8177dd8692c474496a89889830895d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: NewPhone_6
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 1420
-      y: 101
-      width: 38
-      height: 19
-    spriteID: 0b5248be9a80ce44ea7b8c3317d28e42
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: NewPhone_7
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 1420
-      y: 76
-      width: 38
-      height: 19
-    spriteID: 8cdd195ae252e284492fe53caba50a77
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: NewPhone_8
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 312
-      y: 87
-      width: 14
-      height: 14
-    spriteID: d9a71421781f5c546aa163d089263bd7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: NewPhone_9
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 1043
+      x: 238
       y: 4
-      width: 278
-      height: 177
-    spriteID: df0ac27a3d8eb584b8542e8bba6510fa
+      width: 43
+      height: 52
+    spriteID: de7baf6ba6233a94294f42dda739ea40
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 13
+      width: 18
+      height: 36
+    spriteID: f68669fbf0ecfad48b8a01451fde4524
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: PahareSunet 1_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 53
+      width: 32
+      height: 38
+    spriteID: d5af90ed4341119419af8d6fc394ded5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -357,21 +399,21 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 921745308
-    name: NewPhone
+    guid: -1518518361
+    name: PahareSunet 1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: NewPhone
+    - name: PahareSunet 1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 61
-        y: 0
-        width: 1820
-        height: 177
-      spriteId: bbb584c74f5492042ae64ca97c8fa088
+        x: 3
+        y: 31
+        width: 332
+        height: 116
+      spriteId: 0ee26757dcab3844080a549d32a38558
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -414,5 +456,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 2104, y: 185}
-  previousTextureSize: {x: 2048, y: 256}
+  canvasSize: {x: 380, y: 164}
+  previousTextureSize: {x: 512, y: 128}
