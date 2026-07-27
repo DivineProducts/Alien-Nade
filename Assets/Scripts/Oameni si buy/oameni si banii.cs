@@ -6,11 +6,18 @@ using Unity.Collections;
 public class oamenisibanii : MonoBehaviour
 {
     public GameObject comandalol;
-    public bool Item1=false;
+    public bool Drink=false;
+    public int VerifD=-1;
+    public GameObject Item1;
+    public GameObject Item4;
     public GameObject Item2;
     public GameObject Item3;
     public GameObject Numar2;
     public GameObject Numar3;
+
+    public Sprite Lamie;
+    public Sprite Orange;
+    public Sprite Kiwi;
 
     public GameObject tutorial;
 
@@ -41,6 +48,10 @@ public class oamenisibanii : MonoBehaviour
 
     private int rndesteG;
     private int rndesteZ;
+
+    private int rndsterComb;
+    private int rndsterKsO;
+    private int rndsterF;
 
     private float wawa = 50f;
 
@@ -87,19 +98,61 @@ public class oamenisibanii : MonoBehaviour
     }
     public void RandomizareComanda()
     {
-        Item1 = false;
+        Item1.SetActive(true);
         Item3.SetActive(true);
         Item2.SetActive(true);
         /* rndcateg = UnityEngine.Random.Range(0, 3);
          rndcatez = UnityEngine.Random.Range(0, 3);*/
         rndesteZ = UnityEngine.Random.Range(0, 4);
         rndesteG = UnityEngine.Random.Range(0, 4);
+        rndsterComb = UnityEngine.Random.Range(0, 101);
 
-        if (rndesteG == 0) { 
-            rndcateg = 0; 
+        if (rndsterComb % 2 == 0)
+        {
+            Item4.SetActive(false);
+            rndsterF = UnityEngine.Random.Range(1, 3);
+            if(rndsterF == 1)
+            {
+                Item1.GetComponent<SpriteRenderer>().sprite = Lamie;
+                VerifD = 1;
+            }
+            if (rndsterF == 2)
+            {
+                Item1.GetComponent<SpriteRenderer>().sprite = Orange;
+                VerifD = 2;
+            }
+            if (rndsterF == 3)
+            {
+                Item1.GetComponent<SpriteRenderer>().sprite = Orange;
+                VerifD = 3;
+            }
+        }
+        else
+        { 
+            Item1.GetComponent<SpriteRenderer>().sprite = Lamie;
+            Item4.SetActive(true);
+            rndsterKsO = UnityEngine.Random.Range(0, 101);
+            if (rndsterKsO % 2 == 0)
+            {
+                Item4.GetComponent<SpriteRenderer>().sprite = Orange;
+                VerifD = 4;
+            }
+            else
+            {
+                Item4.GetComponent<SpriteRenderer>().sprite = Kiwi;
+                VerifD = 5;
+            }
+        }
+
+
+
+        if (rndesteG == 0)
+        {
+            rndcateg = 0;
             Item3.SetActive(false);
         }
-        else { 
+        else
+        {
             rndcateg = UnityEngine.Random.Range(1, 3);
             if (rndcateg == 1) { Numar3.gameObject.GetComponent<SpriteRenderer>().sprite = nr1; }
             if (rndcateg == 2) { Numar3.gameObject.GetComponent<SpriteRenderer>().sprite = nr2; }
@@ -118,6 +171,7 @@ public class oamenisibanii : MonoBehaviour
         }
 
         
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -125,7 +179,7 @@ public class oamenisibanii : MonoBehaviour
 
         if (other.gameObject.TryGetComponent<BehaviourOfPahare>(out BehaviourOfPahare scriptpahah))
         {
-            if (other.GetComponent<BehaviourOfPahare>().CntGheataP == rndcateg && other.GetComponent<BehaviourOfPahare>().CntZaharP == rndcatez && Item1==true)
+            if (other.GetComponent<BehaviourOfPahare>().CntGheataP == rndcateg && other.GetComponent<BehaviourOfPahare>().CntZaharP == rndcatez && Drink==true)
             {
                 Debug.Log("Comanada e buna");
                 RandomizareComanda();

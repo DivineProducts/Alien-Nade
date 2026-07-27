@@ -193,5 +193,18 @@ MonoBehaviour:
   CntGheataP: 0
   ObiectAtins: {fileID: 0}
   ObiectP: {fileID: 0}
-  CuGheata: {fileID: 5912483656487108818, guid: 775852b51a34e884c9ad3256fa379435, type: 3}
-  CuLimon: {fileID: 49220659116455033, guid: 775852b51a34e884c9ad3256fa379435, type: 3}
+  CuGheataL: {fileID: -4891570199419101753, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuLimon: {fileID: -6910014522096139823, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuGheataO: {fileID: 8430923468250205193, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuOrange: {fileID: -1118750282268119430, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuGheataK: {fileID: 388757514749128705, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuKiwi: {fileID: 8128950618785960523, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuGheataLO: {fileID: 7694799314645969019, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuOrgLim: {fileID: -1795691348117017473, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuGheataKO: {fileID: 942826534291480097, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  CuKiwiLim: {fileID: 2342068485177568328, guid: e6ddab2beaa5f0a4c880b0e2fa77417f, type: 3}
+  Lemonade: {fileID: 6786761733403483403, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  Kiwinade: {fileID: -6781232757664228306, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  Portonade: {fileID: -9104208089889770606, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  LamiPort: {fileID: 5248979811891344043, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  LamiKiwi: {fileID: -1009056781133193795, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
