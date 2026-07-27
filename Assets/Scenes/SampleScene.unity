@@ -1329,7 +1329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1592993251577093367, guid: 108408fb159922c498948b56b3d2cffc, type: 3}
       propertyPath: ml
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2086538612957628735, guid: 108408fb159922c498948b56b3d2cffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5425,7 +5425,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8539366606190202622, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
       propertyPath: ml
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2746140851038047189, guid: 9702b68cf2de4fc4a8711e8f6b6a7a25, type: 3}
       propertyPath: m_Name
@@ -5671,6 +5671,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Apa: {fileID: -3085368391030466958, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
   Lemonade: {fileID: 6786761733403483403, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  Kiwinade: {fileID: -6781232757664228306, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  Portonade: {fileID: -9104208089889770606, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  LamiPort: {fileID: 5248979811891344043, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
+  LamiKiwi: {fileID: -1009056781133193795, guid: 79952b8aced6b2d48ab43cd4bdd962fa, type: 3}
   cntjuice: 0
 --- !u!1 &680630872 stripped
 GameObject:
@@ -13720,7 +13724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6287156205122281189, guid: f13ed0c24711df1418d6d1c320b05506, type: 3}
       propertyPath: ml
-      value: 200
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15004,6 +15008,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b451a73a4b36bc4b9a39f4f8cf520be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gol: {fileID: -4063909749465467856, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
+  sucLamaie: {fileID: -2448222092427123066, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
+  sucPortocala: {fileID: 918691958703880805, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
+  sucKiwi: {fileID: -443306547545906526, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
+  strainer: {fileID: 0}
   capacitate: 0
   tipFruct: 0
   umplut: 0

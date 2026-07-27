@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class umplutSauNu : MonoBehaviour
 {
+    public Sprite gol;
     public Sprite sucLamaie;
     public Sprite sucPortocala;
     public Sprite sucKiwi;
@@ -41,6 +42,7 @@ public class umplutSauNu : MonoBehaviour
     }
     public void Goleste()
     {
+        this.GetComponent<SpriteRenderer>().sprite = gol;
         capacitate = 0;
         tipFruct = 0;
         umplut = false;

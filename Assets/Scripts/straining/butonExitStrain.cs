@@ -29,8 +29,11 @@ public class butonExitStrain : MonoBehaviour
     public void iesireFortata()
     {
         for (int i = 0; i < lamaieRotita.GetComponent<rotireLamaie>().lamaiStoarse; i++)
-            Destroy(joc.GetComponent<stors>().copiiJumatati.transform.GetChild(i).gameObject);
-
+            Destroy(GameObject.FindWithTag("jumLam").transform.GetChild(i).gameObject);
+        for (int i = 0; i < lamaieRotita.GetComponent<rotireLamaie>().portocaleStoarse; i++)
+            Destroy(GameObject.FindWithTag("jumPort").transform.GetChild(i).gameObject);
+        for (int i = 0; i < lamaieRotita.GetComponent<rotireLamaie>().kiwiStoarse; i++)
+            Destroy(GameObject.FindWithTag("jumKiwi").transform.GetChild(i).gameObject);
         Destroy(joc);
         joc.GetComponent<stors>().mana.SetActive(true);
     }

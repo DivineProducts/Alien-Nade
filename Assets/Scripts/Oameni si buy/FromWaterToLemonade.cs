@@ -9,15 +9,53 @@ public class FromWaterToLemonade : MonoBehaviour
     public Sprite LamiPort;
     public Sprite LamiKiwi;
     public int cntjuice;
-    void Update()
+    void fa()
     {
-        if (cntjuice == 0)
+        if (this.gameObject.GetComponent<SpriteRenderer>().sprite == Lemonade)
         {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Apa;
+            if (cntjuice == 2)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = LamiKiwi;
+            }
+            if (cntjuice == 3)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = LamiPort;
+            }
         }
-        if (cntjuice == 1)
+        else if (this.gameObject.GetComponent<SpriteRenderer>().sprite == Kiwinade)
+        {
+            if (cntjuice == 1)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = LamiKiwi;
+            }
+        }
+        else if (this.gameObject.GetComponent<SpriteRenderer>().sprite == Portonade)
+        {
+            if (cntjuice == 1)
+            {
+                this.gameObject.GetComponent<SpriteRenderer>().sprite = LamiPort;
+            }
+        }
+        else if (cntjuice == 1)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = Lemonade;
+           
+            
+        }
+        else if (cntjuice == 2)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Kiwinade;
+            
+        }
+       else  if (cntjuice == 3)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Portonade;
+          
+        }
+        
+        else if (cntjuice == 0)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = Apa;
         }
     }
 
@@ -27,11 +65,15 @@ public class FromWaterToLemonade : MonoBehaviour
             
             if (scriptstorc1.umplut == true)
             {
-                other.gameObject.GetComponent<umplutSauNu>().Goleste();
-                /*scriptstorc1.umplut = false;*/
-                if(other.GetComponent<SpriteRenderer>().sprite.name==other.GetComponent<umplutSauNu>().sucLamaie.name)
-                    this.gameObject.GetComponent<SpriteRenderer>().sprite = Lemonade;
+                
+                scriptstorc1.umplut = false;
+                /*if(other.GetComponent<SpriteRenderer>().sprite.name==other.GetComponent<umplutSauNu>().sucLamaie.name)
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = Lemonade;*/
                 /*cntjuice++;*/
+                cntjuice = other.gameObject.GetComponent<umplutSauNu>().tipFruct;
+                
+                fa();
+                other.gameObject.GetComponent<umplutSauNu>().Goleste();
             }
             
         }
