@@ -20,8 +20,6 @@ public class NewTelefonS : MonoBehaviour
     public GameObject Sugah;
     public GameObject Ice;
 
-
-
     public GameObject Blime;
     public GameObject SLime;
     public GameObject BOrange;
@@ -44,8 +42,6 @@ public class NewTelefonS : MonoBehaviour
     public GameObject SBlender;
 
 
-
-
     private int buylime = 2;
     private int buyorange = 2;
     private int buykiwi = 2;
@@ -58,7 +54,6 @@ public class NewTelefonS : MonoBehaviour
     private int buyblender = 2;
 
     public float Tdown = 10f;
-    private Coroutine NullifingFS = null;
 
     private Coroutine limeTimerRef;
     private Coroutine orangeTimerRef;
@@ -75,15 +70,18 @@ public class NewTelefonS : MonoBehaviour
     public TextMeshProUGUI TimOrg;
     public TextMeshProUGUI TimKiw;
 
+    //save system stuff
+    public GameObject baniJoc;
 
 
-   /* public void Start()
-    {
-        StartCoroutine(Timer(TimIce,15));
-    }*/
+    /* public void Start()
+     {
+         StartCoroutine(Timer(TimIce,15));
+     }*/
 
     public void QuitAlienade()
     {
+        SaveSystem.Save(baniJoc.transform.localScale);
         Application.Quit();
         Debug.Log("Am iesit");
     }
