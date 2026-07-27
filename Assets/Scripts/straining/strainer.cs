@@ -4,38 +4,28 @@ public class strainer : MonoBehaviour
 {
     public GameObject mana;
     public GameObject storcatoare;
+
     public float cantitateSave;
-   
+    public string fructActual;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        /*Debug.Log("a atins");*/
+        umplutSauNu container = GameObject.Find("storcator")  .GetComponent<umplutSauNu>();
+        string fruct = "";
         if (other.name == "LemonTaiatLFx(Clone)")
-        {
-            mana.SetActive(false);
-            storcatoare.SetActive(true);
-            cantitateSave = other.GetComponent<cantitate>().ml;
-            /*storcator.SetActive(true);*/
-
-            Debug.Log("a mers");
-            /*float x = Mathf.PingPong(Time.time, 3f) + 10f;
-                cutit.gameObject.transform.position = new Vector3(x, transform.position.y, transform.position.z);*/
-            Destroy(other.gameObject);
-        }
-        if (other.name == "KiwiTaiatLFx(Clone)")
-        {
-            mana.SetActive(false);
-            storcatoare.SetActive(true);
-            cantitateSave = other.GetComponent<cantitate>().ml;
-
-            Destroy(other.gameObject);
-        }
-        if (other.name == "OrgTaiatLFx(Clone)")
-        {
-            mana.SetActive(false);
-            storcatoare.SetActive(true);
-            cantitateSave = other.GetComponent<cantitate>().ml;
-
-            Destroy(other.gameObject);
-        }
+            fruct = "Lemon";
+        else if (other.name == "KiwiTaiatLFx(Clone)")
+            fruct = "Kiwi";
+        else if (other.name == "OrgTaiatLFx 1(Clone)")
+            fruct = "Orange";
+        else
+            return;
+        if (!container.PoateStoarce(fruct))
+            return;
+        mana.SetActive(false);
+        storcatoare.SetActive(true);
+        cantitateSave = other.GetComponent<cantitate>().ml;
+        fructActual = fruct;
+        Destroy(other.gameObject);
     }
 }

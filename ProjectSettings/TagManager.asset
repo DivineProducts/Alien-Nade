@@ -29,6 +29,9 @@ TagManager:
   - ScoateKiwi
   - tataKiwi
   - tataPortocala
+  - jumKiwi
+  - jumPort
+  - jumLam
   layers:
   - Default
   - TransparentFX
