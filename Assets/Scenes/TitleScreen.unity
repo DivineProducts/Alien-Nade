@@ -239,7 +239,7 @@ RectTransform:
   m_GameObject: {fileID: 303025584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.6122687, y: 5.7829165, z: 3.5236661}
+  m_LocalScale: {x: 3.299754, y: 4.4241843, z: 3.2188168}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1720836793}
@@ -247,7 +247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -327, y: -206}
+  m_AnchoredPosition: {x: -313, y: -223}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &303025586
@@ -294,9 +294,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 303025589}
+      - m_Target: {fileID: 588315897}
         m_TargetAssemblyTypeName: ButtonsForTITLE, Assembly-CSharp
-        m_MethodName: OptionsBtn
+        m_MethodName: ContinueBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6952646979866790558, guid: 77ad5bc4b6f54e244ae4b1679ea6cf96, type: 3}
+  m_Sprite: {fileID: 6261019467003902220, guid: 2af2da5d3c23050418629a47690d27dc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -386,14 +386,14 @@ RectTransform:
   m_GameObject: {fileID: 588315892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.11544, y: 5.508018, z: 1.6929}
+  m_LocalScale: {x: 4.147721, y: 5.551222, z: 1.7061788}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 613472438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 107, y: -189}
+  m_AnchoredPosition: {x: 111, y: -191}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588315894

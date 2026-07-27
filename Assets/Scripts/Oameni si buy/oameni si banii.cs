@@ -204,8 +204,6 @@ public class oamenisibanii : MonoBehaviour
         
 
     }
-    
-
     IEnumerator GrowBar(float amount, float duration)
     {
         Vector3 initial = bara.transform.localScale;

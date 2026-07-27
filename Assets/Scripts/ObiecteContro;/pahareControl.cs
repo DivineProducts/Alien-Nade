@@ -13,13 +13,13 @@ public class pahareControl : MonoBehaviour
     public void schimbaSprite()
     {
         pahareRamase--;
-        if (pahareRamase == 6)
+        if (pahareRamase >= 6)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = plin;
-        if (pahareRamase == 4)
+        if (pahareRamase >= 4 && pahareRamase<6)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = jumate;
-        if (pahareRamase == 2)
+        if (pahareRamase >= 1 && pahareRamase<4)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = treime;
-        if (pahareRamase == 0)
+        if (pahareRamase < 1)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = null;
     }
 }

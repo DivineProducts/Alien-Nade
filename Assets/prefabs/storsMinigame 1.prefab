@@ -115,8 +115,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storcatoare: {fileID: 463746919314791374}
   strainer: {fileID: 733818007037412522}
-  completedRotations: 0
   lamaiStoarse: 0
+  kiwiStoarse: 0
+  portocaleStoarse: 0
   exit: {fileID: 6030409727814795973}
 --- !u!1 &615205573830271459
 GameObject:
@@ -694,7 +695,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mana: {fileID: 1770825471274420916}
   storcatoare: {fileID: 463746919314791374}
+  fructRotit: {fileID: 463746919314791374}
+  lamaie: {fileID: -6680225676552477409, guid: f348920d9f890924a9053873355cc111, type: 3}
+  kiwi: {fileID: -4340985655336515968, guid: ac427c0fb8540764e9a3a4e126ec78c1, type: 3}
+  porto: {fileID: 5060112477875823843, guid: ac427c0fb8540764e9a3a4e126ec78c1, type: 3}
   cantitateSave: 0
+  fructActual: 
 --- !u!1 &781234853550348698
 GameObject:
   m_ObjectHideFlags: 0

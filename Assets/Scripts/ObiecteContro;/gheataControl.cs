@@ -9,11 +9,11 @@ public class gheataControl : MonoBehaviour
     public void schimbaSprite()
     {
         gheataRamasa--;
-        if(gheataRamasa ==6)
+        if(gheataRamasa >=6)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = start;
-        if (gheataRamasa == 4)
+        if (gheataRamasa < 6 && gheataRamasa>=3)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = jumate;
-        if (gheataRamasa == 2)
+        if (gheataRamasa <3 && gheataRamasa>0)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = treime;
         if (gheataRamasa == 0)
             this.gameObject.GetComponent<SpriteRenderer>().sprite = null;

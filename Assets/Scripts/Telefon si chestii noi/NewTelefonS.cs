@@ -7,6 +7,7 @@ using System.Collections;
 public class NewTelefonS : MonoBehaviour
 {
     public GameObject ThePhonee;
+    public GameObject tel;
     public GameObject Telf;
 
     public GameObject MarketSistem;
@@ -72,20 +73,42 @@ public class NewTelefonS : MonoBehaviour
 
     //save system stuff
     public GameObject baniJoc;
+    //esta e unloaded, nu are cum sa mearga baiii
+    public void Start()
+    { 
+        Debug.Log(Static.continuam);
+        if (Static.continuam)
+        {
+            Debug.Log("a dat load");
+            GameData data = SaveSystem.Load();
+            Debug.Log(data.gheataRamasa);
+            baniJoc.transform.localScale = data.baniscale;
+            baniJoc.transform.position = data.banipos;
 
+            Ice.GetComponent<gheataControl>().gheataRamasa = data.gheataRamasa+1;
+            Ice.GetComponent<gheataControl>().schimbaSprite();
+            PahareStac.GetComponent<pahareControl>().pahareRamase = data.paharRamasa + 1;
+            PahareStac.GetComponent<pahareControl>().schimbaSprite();
+            Sugah.GetComponent<zaharControl>().zaharRamase = data.zaharRamasa + 1;
+            Sugah.GetComponent<zaharControl>().schimbaSprite();
+            Lemons.GetComponent<lamaiControl>().lamaiRamase = data.lamaieRamasa + 1;
+            Lemons.GetComponent<lamaiControl>().schimbaSprite();
+            Kiwi.GetComponent<lamaiControl>().lamaiRamase = data.kiwiRamasa + 1;
+            Kiwi.GetComponent<lamaiControl>().schimbaSprite();
+            Orange.GetComponent<lamaiControl>().lamaiRamase = data.portocalaRamasa + 1;
+            Orange.GetComponent<lamaiControl>().schimbaSprite();
 
-    /* public void Start()
-     {
-         StartCoroutine(Timer(TimIce,15));
-     }*/
-
+        }
+        Static.continuam = false;
+        tel.SetActive(false);
+    }
     public void QuitAlienade()
     {
-        SaveSystem.Save(baniJoc.transform.localScale);
+        SaveSystem.Save(baniJoc.transform.localScale, baniJoc.transform.position, Ice.GetComponent<gheataControl>().gheataRamasa,PahareStac.GetComponent<pahareControl>().pahareRamase,Sugah.GetComponent<zaharControl>().zaharRamase,Lemons.GetComponent<lamaiControl>().lamaiRamase,Kiwi.GetComponent<lamaiControl>().lamaiRamase, Orange.GetComponent<lamaiControl>().lamaiRamase);
         Application.Quit();
         Debug.Log("Am iesit");
     }
-
+ 
     public void BackButton()
     {
         Telf.SetActive(false);

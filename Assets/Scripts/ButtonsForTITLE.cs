@@ -3,9 +3,10 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+
 public class ButtonsForTITLE : MonoBehaviour
 {
-   public GameObject TextWok;
+    public GameObject TextWok;
    public  IEnumerator WaitAndLog()
     {
         yield return new WaitForSeconds(2f);
@@ -29,6 +30,7 @@ public class ButtonsForTITLE : MonoBehaviour
     }
     public void ContinueBtn()
     {
-        SceneManager.LoadScene("TitleScreen");
+        Static.continuam = true;
+        SceneManager.LoadScene("SampleScene");
     }
 }
