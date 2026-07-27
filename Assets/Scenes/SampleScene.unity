@@ -7293,8 +7293,6 @@ GameObject:
   m_Component:
   - component: {fileID: 872998154}
   m_Layer: 0
-  m_Name: jumatati
-  m_TagString: tataJumatati
   m_Name: jumLemon
   m_TagString: jumLam
   m_Icon: {fileID: 0}
@@ -7313,7 +7311,6 @@ Transform:
   m_LocalPosition: {x: -1.4416454, y: -3.060221, z: -0.089079656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Children:
   - {fileID: 652248192}
   m_Father: {fileID: 0}
@@ -16319,7 +16316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b451a73a4b36bc4b9a39f4f8cf520be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  umplut: 0
   gol: {fileID: -4063909749465467856, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
   sucLamaie: {fileID: -2448222092427123066, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
   sucPortocala: {fileID: 918691958703880805, guid: c44e4a6d0b3881e46a8896675356cba8, type: 3}
@@ -18626,7 +18622,6 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
   m_IsActive: 0
 --- !u!114 &2117506781
 MonoBehaviour:
