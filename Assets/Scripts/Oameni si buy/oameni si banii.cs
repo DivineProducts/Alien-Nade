@@ -110,7 +110,7 @@ public class oamenisibanii : MonoBehaviour
         if (rndsterComb % 2 == 0)
         {
             Item4.SetActive(false);
-            rndsterF = UnityEngine.Random.Range(1, 3);
+            rndsterF = UnityEngine.Random.Range(1, 4);
             if(rndsterF == 1)
             {
                 Item1.GetComponent<SpriteRenderer>().sprite = Lamie;
@@ -123,7 +123,7 @@ public class oamenisibanii : MonoBehaviour
             }
             if (rndsterF == 3)
             {
-                Item1.GetComponent<SpriteRenderer>().sprite = Orange;
+                Item1.GetComponent<SpriteRenderer>().sprite = Kiwi;
                 VerifD = 3;
             }
         }
