@@ -2773,8 +2773,12 @@ MonoBehaviour:
   followSpeed: 15
   lamai: {fileID: 606348734}
   tine: 0
+  kiwirom: {fileID: 1107951211}
+  portocale: {fileID: 1498493721}
   pahar: {fileID: 6981165305278403073, guid: 2729124ffb16f244bb6f1fda7d5d8a1c, type: 3}
   lamaie: {fileID: 4868280327655075487, guid: 77624cbf8f93a7e4799cf51865368905, type: 3}
+  portocala: {fileID: 7052332717399368191, guid: aca7b4b9d4649f74f8850656f4e07a7a, type: 3}
+  kiwiRomana: {fileID: 3907392901637067491, guid: e9d950272222d3a438878034a19ac4b9, type: 3}
   zahar: {fileID: 5857263881818547917, guid: 16adb946d4fea8546ab5456baff82802, type: 3}
   gheata: {fileID: 787941522198254568, guid: f68c422b283d0d6478574b7cbf6c0dad, type: 3}
   storsMiniGame: {fileID: 7797210286984886877, guid: 0d8ee0a59258e7d44a24aea98e2973b0, type: 3}
@@ -6221,7 +6225,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -2.709754, y: 4.295664}
+  m_Offset: {x: -2.709754, y: 3.9551754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6231,7 +6235,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.956015, y: 3.0024626}
+  m_Size: {x: 19.956015, y: 3.6834393}
   m_EdgeRadius: 0
 --- !u!4 &722005585
 Transform:
@@ -6631,6 +6635,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadaPort
       objectReference: {fileID: 0}
+    - target: {fileID: 3012257825200460950, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+      propertyPath: m_Size.x
+      value: 0.98669195
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012257825200460950, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6494384
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012257825200460950, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.020625114
+      objectReference: {fileID: 0}
+    - target: {fileID: 3012257825200460950, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.12622434
+      objectReference: {fileID: 0}
     - target: {fileID: 3344212804326459602, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.533101
@@ -6645,7 +6665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3344212804326459602, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6
+      value: -3.8899999
       objectReference: {fileID: 0}
     - target: {fileID: 3344212804326459602, guid: e797551622b4e3b47a630fc9e4218493, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17090,7 +17110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 917042786949446978, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6
+      value: -3.8899999
       objectReference: {fileID: 0}
     - target: {fileID: 917042786949446978, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17131,6 +17151,22 @@ PrefabInstance:
     - target: {fileID: 2685365470121874445, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
       propertyPath: m_TagString
       value: ScoateKiwi
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810662120951080451, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8803802
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810662120951080451, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6094265
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810662120951080451, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.18574813
+      objectReference: {fileID: 0}
+    - target: {fileID: 8810662120951080451, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.10621847
       objectReference: {fileID: 0}
     - target: {fileID: 9184568272431519791, guid: 08f478b503466d14ab4caaa1c9163180, type: 3}
       propertyPath: m_SortingOrder
@@ -18951,6 +18987,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1074716798}
     m_Modifications:
+    - target: {fileID: 1151083255572656389, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8113717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151083255572656389, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6177499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151083255572656389, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.15516198
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151083255572656389, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.11038025
+      objectReference: {fileID: 0}
     - target: {fileID: 8688458134235239875, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
       propertyPath: m_Name
       value: lada1
@@ -18961,7 +19013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9126331744463529870, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6
+      value: -3.89
       objectReference: {fileID: 0}
     - target: {fileID: 9126331744463529870, guid: 8d4629691f5c3eb4389ad68ade52f69a, type: 3}
       propertyPath: m_LocalPosition.z

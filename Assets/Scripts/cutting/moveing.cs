@@ -13,19 +13,19 @@ public class moveing : MonoBehaviour
     private float wawa=50f;
     void Start()
     {
-        this.gameObject.GetComponent<Transform>().localPosition = new Vector3(13, 0, 0);
+        this.gameObject.GetComponent<Transform>().localPosition = new Vector3(13, -1, 0);
     }
 
         void Update()
         {
         this.gameObject.GetComponent<Transform>().localPosition += new Vector3(wawa*7* Time.deltaTime, 0, 0);
 
-            if (this.gameObject.GetComponent<Transform>().localPosition.x >= 13f)
+            if (this.gameObject.GetComponent<Transform>().localPosition.x >= 12f)
             {
             wawa = -1f;
             }
 
-            if (this.gameObject.GetComponent<Transform>().localPosition.x <= 10f)
+            if (this.gameObject.GetComponent<Transform>().localPosition.x <= 9f)
             {
             wawa = 1f;
             }
@@ -33,9 +33,9 @@ public class moveing : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             float left = Mathf.Round(
-                   (transform.localPosition.x - 10f) * 100f) / 100f;
+                   (transform.localPosition.x - 9f) * 100f) / 100f;
             float right = Mathf.Round(
-                (13f - transform.localPosition.x) * 100f) / 100f;
+                (12f - transform.localPosition.x) * 100f) / 100f;
 
             if (board.GetComponent<cuttingBoard>().numeFructActual == "LemonFx(Clone)")
             {

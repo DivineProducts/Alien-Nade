@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 463746919314791374}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.121446446, w: 0.992598}
-  m_LocalPosition: {x: 11.71, y: 1.16, z: 0}
+  m_LocalPosition: {x: 12.13, y: 0.17, z: 0}
   m_LocalScale: {x: 2.499296, y: 2.499296, z: 2.499296}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3106,6 +3106,7 @@ GameObject:
   - component: {fileID: 8317688539748102740}
   - component: {fileID: 430685355612188218}
   - component: {fileID: 1024746384582796713}
+  - component: {fileID: 1776490157504969721}
   m_Layer: 1
   m_Name: storsMinigame 1
   m_TagString: Untagged
@@ -3196,7 +3197,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 7.7283335, y: 8.367241}
+  m_Offset: {x: 9.3375845, y: 8.733975}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3206,7 +3207,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16.456667, y: 1.5651889}
+  m_Size: {x: 13.238165, y: 3.0143828}
   m_EdgeRadius: 0
 --- !u!61 &3368233930756483532
 BoxCollider2D:
@@ -3242,7 +3243,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 11.42663, y: -6.8197894}
+  m_Offset: {x: 11.42663, y: -5.846512}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3252,7 +3253,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.912636, y: 8.493543}
+  m_Size: {x: 8.912636, y: 6.5469875}
   m_EdgeRadius: 0
 --- !u!61 &5656287980899984852
 BoxCollider2D:
@@ -3288,7 +3289,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 17.778852, y: -0.26464462}
+  m_Offset: {x: 17.584955, y: -0.26464462}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3298,7 +3299,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.8259392, y: 17.305408}
+  m_Size: {x: 4.2137337, y: 17.305408}
   m_EdgeRadius: 0
 --- !u!61 &1463576608386963047
 BoxCollider2D:
@@ -3334,7 +3335,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 3.2436886, y: -0.3071661}
+  m_Offset: {x: 5.2239304, y: 0.23849964}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3344,7 +3345,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.487377, y: 16.800692}
+  m_Size: {x: 4.714904, y: 17.892023}
   m_EdgeRadius: 0
 --- !u!61 &8317688539748102740
 BoxCollider2D:
@@ -3380,7 +3381,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 7.6862297, y: 3.5770967}
+  m_Offset: {x: 9.239989, y: 3.5770967}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3390,7 +3391,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16.372463, y: 0.09440565}
+  m_Size: {x: 13.264944, y: 0.09440565}
   m_EdgeRadius: 0
 --- !u!210 &430685355612188218
 SortingGroup:
@@ -3423,3 +3424,49 @@ MonoBehaviour:
   jumateKiwi: {fileID: 6253875506847377196, guid: 4b7fd2d8dda86514a8ca288bbf5810eb, type: 3}
   jumatePorto: {fileID: 5893907754376281530, guid: 4432349d55325d049a872900dfc01e24, type: 3}
   i: 1
+--- !u!61 &1776490157504969721
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797210286984886877}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 8.276648, y: 5.683959}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.5960827, y: 4.2921734}
+  m_EdgeRadius: 0
