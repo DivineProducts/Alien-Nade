@@ -55,7 +55,7 @@ public class oamenisibanii : MonoBehaviour
 
     private float wawa = 50f;
 
-    private float timerig = 60f;
+    private float timerig = 300f;
     private bool SopTimer = false;
     private Coroutine cevacutimer;
     AudioManeger audioManeger;
@@ -187,7 +187,7 @@ public class oamenisibanii : MonoBehaviour
                 RandomizareComanda();
                 Destroy(other.gameObject);
                 ComandaInProcesare = false;
-                timerig = 60f;
+                timerig = 300f;
                 audioManeger.SFX(audioManeger.sell);
 
                 /* bara.transform.localScale = new Vector3(bara.transform.localScale.x, bara.transform.localScale.y + priCre, bara.transform.localScale.z);*/
@@ -200,7 +200,7 @@ public class oamenisibanii : MonoBehaviour
                 RandomizareComanda(); 
                 Destroy(other.gameObject);
                 ComandaInProcesare = false;
-                timerig = 60f;
+                timerig = 300f;
             }
             
         }
@@ -286,7 +286,7 @@ public class oamenisibanii : MonoBehaviour
     {
         if(cevacutimer == null)
         {
-            timerig = 60;
+            timerig = 300;
             SopTimer = false; 
             cevacutimer = StartCoroutine(CatTimpp());
         }
