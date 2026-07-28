@@ -4,8 +4,13 @@ using System;
 [Serializable]
 public class GameData
 {
-    public Vector3 baniscale;
-    public Vector3 banipos;
+    public float baniScaleX;
+    public float baniScaleY;
+    public float baniScaleZ;
+
+    public float baniPosX;
+    public float baniPosY;
+    public float baniPosZ;
 
     public int gheataRamasa;
     public int paharRamasa;
@@ -15,8 +20,13 @@ public class GameData
     public int portocalaRamasa;
     public GameData(Vector3 banii, Vector3 baniPos, int gheata, int pahar, int zahar, int lamaie, int kiwi, int portocala)
     {
-        this.baniscale = banii;
-        this.banipos = baniPos;
+        baniScaleX = banii.x;
+        baniScaleY = banii.y;
+        baniScaleZ = banii.z;
+
+        baniPosX = baniPos.x;
+        baniPosY = baniPos.y;
+        baniPosZ = baniPos.z;
         this.gheataRamasa = gheata;
         this.paharRamasa = pahar;
         this.zaharRamasa = zahar;

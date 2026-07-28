@@ -82,8 +82,8 @@ public class NewTelefonS : MonoBehaviour
             Debug.Log("a dat load");
             GameData data = SaveSystem.Load();
             Debug.Log(data.gheataRamasa);
-            baniJoc.transform.localScale = data.baniscale;
-            baniJoc.transform.position = data.banipos;
+            baniJoc.transform.localScale = new Vector3(data.baniScaleX, data.baniScaleY, data.baniScaleZ);
+            baniJoc.transform.position = new Vector3(data.baniPosX, data.baniPosY, data.baniPosZ);
 
             Ice.GetComponent<gheataControl>().gheataRamasa = data.gheataRamasa+1;
             Ice.GetComponent<gheataControl>().schimbaSprite();
