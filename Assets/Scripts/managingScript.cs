@@ -17,7 +17,10 @@ public class managingScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {if (telefon.activeSelf)
+            {
                 telefon.SetActive(false);
+               
+            }
             else telefon.SetActive(true);
         }
     }

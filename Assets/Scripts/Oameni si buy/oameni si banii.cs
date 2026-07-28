@@ -58,12 +58,14 @@ public class oamenisibanii : MonoBehaviour
     private float timerig = 60f;
     private bool SopTimer = false;
     private Coroutine cevacutimer;
+    AudioManeger audioManeger;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         RandomizareComanda();
         RandomizareOm();
+        audioManeger = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManeger>();
     }
 
     // Update is called once per frame
@@ -186,8 +188,9 @@ public class oamenisibanii : MonoBehaviour
                 Destroy(other.gameObject);
                 ComandaInProcesare = false;
                 timerig = 60f;
+                audioManeger.SFX(audioManeger.sell);
 
-               /* bara.transform.localScale = new Vector3(bara.transform.localScale.x, bara.transform.localScale.y + priCre, bara.transform.localScale.z);*/
+                /* bara.transform.localScale = new Vector3(bara.transform.localScale.x, bara.transform.localScale.y + priCre, bara.transform.localScale.z);*/
 
                 StartCoroutine(GrowBar(priCre, 0.5f));
             }

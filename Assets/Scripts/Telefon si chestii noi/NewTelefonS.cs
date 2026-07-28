@@ -13,6 +13,7 @@ public class NewTelefonS : MonoBehaviour
     public GameObject MarketSistem;
     public GameObject TMarketpg1;
     public GameObject TMarketpg2;
+    public GameObject Options; 
 
     public GameObject PahareStac;
     public GameObject Lemons;
@@ -74,8 +75,16 @@ public class NewTelefonS : MonoBehaviour
     //save system stuff
     public GameObject baniJoc;
     //esta e unloaded, nu are cum sa mearga baiii
+    public Sprite CursorSprite;
+    private Texture2D cursorTexture;
+    private Vector2 hotSpot = Vector2.zero;
+    private bool boolsor=false;
+    public int latimeDorita ;  
+    public int inaltimeDorita ;
+
     public void Start()
-    { 
+    {
+        cursorTexture = CursorSprite.texture;
         Debug.Log(Static.continuam);
         if (Static.continuam)
         {
@@ -102,6 +111,68 @@ public class NewTelefonS : MonoBehaviour
         Static.continuam = false;
         tel.SetActive(false);
     }
+
+    public void Update()
+    {
+        if (!boolsor && tel.activeSelf)
+        {
+            ChangeCursor();
+            boolsor = true;
+        }
+        else if (tel.activeSelf == false && boolsor )
+        {
+          
+                ResetToDefaultCursor();
+                boolsor = false;
+            
+        }
+    }
+
+    public void ChangeCursor()
+    {
+        if (CursorSprite == null)
+        {
+            Debug.LogError("Nu ai asignat niciun Sprite în câmpul CursorSprite!");
+            return;
+        }
+
+       
+        int spriteW = (int)CursorSprite.textureRect.width;
+        int spriteH = (int)CursorSprite.textureRect.height;
+
+        Texture2D texturaOriginala = new Texture2D(spriteW, spriteH, TextureFormat.RGBA32, false);
+
+        Color[] pixeliOriginali = CursorSprite.texture.GetPixels(
+            (int)CursorSprite.textureRect.x,
+            (int)CursorSprite.textureRect.y,
+            spriteW,
+            spriteH
+        );
+
+        texturaOriginala.SetPixels(pixeliOriginali);
+        texturaOriginala.Apply();
+
+        Texture2D texturaMare = new Texture2D(latimeDorita, inaltimeDorita, TextureFormat.RGBA32, false);
+        texturaMare.filterMode = FilterMode.Point;
+
+        for (int y = 0; y < inaltimeDorita; y++)
+        {
+            for (int x = 0; x < latimeDorita; x++)
+            {
+                float xFrac = (float)x / latimeDorita;
+                float yFrac = (float)y / inaltimeDorita;
+                Color pixelCalculat = texturaOriginala.GetPixelBilinear(xFrac, yFrac);
+                texturaMare.SetPixel(x, y, pixelCalculat);
+            }
+        }
+        texturaMare.Apply();
+         Destroy(texturaOriginala);
+        Cursor.SetCursor(texturaMare, hotSpot, CursorMode.ForceSoftware);
+    }
+    public void ResetToDefaultCursor()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    }
     public void QuitAlienade()
     {
         SaveSystem.Save(baniJoc.transform.localScale, baniJoc.transform.position, Ice.GetComponent<gheataControl>().gheataRamasa,PahareStac.GetComponent<pahareControl>().pahareRamase,Sugah.GetComponent<zaharControl>().zaharRamase,Lemons.GetComponent<lamaiControl>().lamaiRamase,Kiwi.GetComponent<lamaiControl>().lamaiRamase, Orange.GetComponent<lamaiControl>().lamaiRamase);
@@ -111,12 +182,19 @@ public class NewTelefonS : MonoBehaviour
  
     public void BackButton()
     {
-        Telf.SetActive(false);
+        tel.SetActive(false);
     }
 
     public void SettingsOptions()
     {
+        Options.SetActive(true);
+        Telf.SetActive(false);
+    }
 
+    public void ExitOptions()
+    {
+        Telf.SetActive(true);
+        Options.SetActive(false);
     }
 
     public void MarketBut()

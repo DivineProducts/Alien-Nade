@@ -13,12 +13,14 @@ public class rotireLamaie : MonoBehaviour
     private float lastAngle = 0f;
 
     public GameObject exit;
+    AudioManeger audioManeger;
 
     private void Start()
     {
         Vector3 mousePos =Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction =  mousePos - storcatoare.transform.position;
         lastAngle =  Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        audioManeger = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManeger>();
     }
     private void Update()
     {
@@ -37,6 +39,7 @@ public class rotireLamaie : MonoBehaviour
     }
     private void FinishSqueezing()
     {
+        audioManeger.SFX(audioManeger.stors);
         strainer strainerScript =  strainer.GetComponent<strainer>();
         umplutSauNu container =GameObject.Find("storcator").GetComponent<umplutSauNu>();
 
@@ -55,5 +58,6 @@ public class rotireLamaie : MonoBehaviour
         strainerScript.mana.SetActive(true);
         if (container.umplut)
             exit.GetComponent<butonExitStrain>().iesireFortata();
+
     }
 }

@@ -11,9 +11,12 @@ public class moveing : MonoBehaviour
     public int nrporto = 0;
 
     private float wawa=50f;
+
+    AudioManeger audioManeger;
     void Start()
     {
         this.gameObject.GetComponent<Transform>().localPosition = new Vector3(13, -1, 0);
+        audioManeger = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManeger>();
     }
 
         void Update()
@@ -32,6 +35,7 @@ public class moveing : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
+            audioManeger.SFX(audioManeger.Cut);
             float left = Mathf.Round(
                    (transform.localPosition.x - 9f) * 100f) / 100f;
             float right = Mathf.Round(
