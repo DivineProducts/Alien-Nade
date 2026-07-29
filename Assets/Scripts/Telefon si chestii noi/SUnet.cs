@@ -20,12 +20,15 @@ public class SUnet : MonoBehaviour
     public Sprite SpS3;
     public Sprite SpS4;
 
+    AudioManeger audioManeger;
+
     public void Start()
     {
-        
+        audioManeger = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManeger>();
     }
     public void muizcup()
     {
+       
         if (Paharmuz.GetComponent<Image>().sprite == PaharGol)
         {
             Paharmuz.GetComponent<Image>().sprite = SpM1;
@@ -66,7 +69,8 @@ public class SUnet : MonoBehaviour
 
     public void sfxup()
     {
-        if(Paharsfx.GetComponent<Image>().sprite == PaharGol)
+        audioManeger.SFXVolumePlus();
+        if (Paharsfx.GetComponent<Image>().sprite == PaharGol)
         {
             Paharsfx.GetComponent<Image>().sprite = SpS1;
         }
@@ -86,6 +90,7 @@ public class SUnet : MonoBehaviour
 
     public void sfxdown()
     {
+        audioManeger.SFXVolumeMinus();
         if (Paharsfx.GetComponent<Image>().sprite == SpS4)
         {
             Paharsfx.GetComponent<Image>().sprite = SpS3;

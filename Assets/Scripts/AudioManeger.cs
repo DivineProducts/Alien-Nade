@@ -16,11 +16,11 @@ public class AudioManeger : MonoBehaviour
         sursaSFX.volume = 0.5f;
     }
 
-    public void SongVolumePlus()
+    public void SFXVolumePlus()
     {
         sursaSFX.volume += 0.1f;
     }
-    public void SongVolumeMinus()
+    public void SFXVolumeMinus()
     {
         sursaSFX.volume -= 0.1f;
     }
