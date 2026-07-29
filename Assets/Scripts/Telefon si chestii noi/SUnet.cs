@@ -28,7 +28,7 @@ public class SUnet : MonoBehaviour
     }
     public void muizcup()
     {
-       
+        audioManeger.SongVolumePlus();
         if (Paharmuz.GetComponent<Image>().sprite == PaharGol)
         {
             Paharmuz.GetComponent<Image>().sprite = SpM1;
@@ -48,7 +48,8 @@ public class SUnet : MonoBehaviour
     }
 
     public void muizcdown()
-    {  
+    {
+        audioManeger.SongVolumeMinus();
         if (Paharmuz.GetComponent<Image>().sprite == SpM1)
         {
             Paharmuz.GetComponent<Image>().sprite = PaharGol;
