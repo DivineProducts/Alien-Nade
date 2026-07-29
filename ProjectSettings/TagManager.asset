@@ -32,6 +32,7 @@ TagManager:
   - jumKiwi
   - jumPort
   - jumLam
+  - AudioManager
   layers:
   - Default
   - TransparentFX
